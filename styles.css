@@ -13,6 +13,26 @@ body {
     margin: auto;
 }
 
+.h2 {
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.h3 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 143%;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -100,10 +120,6 @@ body {
     margin-right: 15px;
 }
 
-.complex {
-
-}
-
 .complex-item {
     display: flex;
     align-items: center;
@@ -177,7 +193,7 @@ body {
 }
 
 .advantages-block {
-    margin-bottom: 80px;
+    margin-bottom: 170px;
 }
 
 .flex-column {
@@ -222,4 +238,41 @@ body {
 
 .advantages-top {
     margin-bottom: 55px;
+}
+
+.whatIs-content {
+    display: flex;
+    gap: 10px;
+}
+
+.whatIs-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.whatIs-item {
+    display: flex;
+    gap: 8px;
+}
+
+.gilroy-700 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    color: #FFFFFF;
+}
+.gilroy-500 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 156%;
+    color: #FFFFFF;
+}
+
+.whatIs-right {
+    width: max-content;
 }
