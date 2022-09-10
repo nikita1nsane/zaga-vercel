@@ -23,6 +23,10 @@ body {
     margin-bottom: 50px;
 }
 
+.mb-50 {
+    margin-bottom: 50px;
+}
+
 .h3 {
     font-family: 'Gilroy';
     font-style: normal;
@@ -240,6 +244,10 @@ body {
     margin-bottom: 55px;
 }
 
+.whatIs-block {
+    margin-bottom: 170px;
+}
+
 .whatIs-content {
     display: flex;
     gap: 10px;
@@ -275,4 +283,92 @@ body {
 
 .whatIs-right {
     width: max-content;
+}
+
+.numbers-subtitle {
+    background: #70358F;
+    border: 2px solid #70358F;
+    box-shadow: 0px 0px 24px 1px #70358F;
+    border-radius: 20px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 15px 15px;
+}
+
+.numbers-title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 143%;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 66px;
+}
+
+.numbers-second {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    margin-bottom: 50px;
+}
+
+.numbers-adv {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.numbers-third {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ntb-title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 143%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.ntb-subtitle {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    background: #E32966;
+    border: 2px solid #E32966;
+    box-shadow: 0px 0px 24px 1px #E32966;
+    border-radius: 20px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.num-third-block {
+    width: 330px;
 }

@@ -3,6 +3,7 @@ import FirstBlock from "../components/FirstBlock"
 import VideoBlock from "../components/VideoBlock"
 import Advantages from "../components/Advantages"
 import WhatIs from "../components/WhatIs"
+import Numbers from "../components/Numbers"
 
 function HomePage() {
     return (
@@ -12,6 +13,7 @@ function HomePage() {
             <VideoBlock />
             <Advantages />
             <WhatIs />
+            <Numbers />
         </>
     )
   }
