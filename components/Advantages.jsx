@@ -3,7 +3,7 @@ const Advantages = () => {
         <div className="advantages-block container">
             <div className="advantages-top flex-column">
                 <div><span className="color-red h1">300000</span></div>
-                <div><span>гостей нам доверяют</span></div>
+                <div><span className="fz-18">гостей нам доверяют</span></div>
             </div>
             <div className="advantages-bottom">
                 <div className="advantages-item flex-column">
@@ -16,12 +16,12 @@ const Advantages = () => {
                 </div>
                 <div className="advantages-item flex-column">
                     <div className="ot100">
-                        <div className="h1 color-red">
-                            <div className="h6">
+                        <div className="h1 color-red pos-r">
+                            <div className="h6 last-ot pos-a">
                                 от
                             </div>
                             <div>
-                                100 <span className="h6">м2</span>
+                                100 <span className="h6 last-ot">м2</span>
                             </div>
                         </div>
                         <div className="h6">требуемая площадь</div>

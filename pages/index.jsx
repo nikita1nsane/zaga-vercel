@@ -4,6 +4,8 @@ import VideoBlock from "../components/VideoBlock"
 import Advantages from "../components/Advantages"
 import WhatIs from "../components/WhatIs"
 import Numbers from "../components/Numbers"
+import NewCity from "../components/NewCity"
+import GameLibrary from "../components/GameLibrary"
 
 function HomePage() {
     return (
@@ -14,6 +16,8 @@ function HomePage() {
             <Advantages />
             <WhatIs />
             <Numbers />
+            <NewCity />
+            <GameLibrary />
         </>
     )
   }

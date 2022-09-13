@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial:wght@100;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('./fonts/fonts.css');
 
 
 body {
     background: #151517;
     color: white;
-    font-family: 'Questrial';
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
 }
 
 .container {
@@ -25,6 +28,41 @@ body {
 
 .mb-50 {
     margin-bottom: 50px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fz-18 {
+    font-size: 18px;
+}
+
+.h6.last-ot {
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 220%;
+    text-align: center;
+}
+
+.pos-a {
+    position: absolute;
+    left: 40%;
+    top: -50%;
+}
+
+.pos-r {
+    position: relative;
 }
 
 .h3 {
@@ -99,6 +137,7 @@ body {
 .color-green {
     color: #8BD073;
     margin-left: 6px;
+    font-weight: 500;
 }
 
 .header-right {
@@ -118,6 +157,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 13px 0px;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 .complex svg {
@@ -250,7 +291,6 @@ body {
 
 .whatIs-content {
     display: flex;
-    gap: 10px;
 }
 
 .whatIs-left {
@@ -372,3 +412,69 @@ body {
 .num-third-block {
     width: 330px;
 }
+
+.newCity-block {
+    background: url('./images/svg/map.svg') no-repeat;
+    height: 913px;
+    margin-bottom: 18px;
+}
+
+.newCity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    gap: 144px;
+}
+.right-title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 143%;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+}
+
+.city-list span {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 44px;
+    text-transform: uppercase;
+}
+
+.city-list {
+    width: 330px;
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+    background-image: linear-gradient(to bottom, #E32966 48.96%, rgba(217, 217, 217, 0) 100%);
+}
+
+.button {
+    background: #E32966;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border-width: 0;
+    padding: 10px 30px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 162%;
+    color: #FFFFFF;
+}
+
+.newCity-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.newCity-left .h3 {
+    text-align: left;
+    font-weight: 500;
+}
+
