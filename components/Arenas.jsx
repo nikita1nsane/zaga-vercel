@@ -1,0 +1,62 @@
+
+
+const Arenas = () => {
+  return (
+    <>
+        <div className="container arenas-block">
+            <div className="h2">ZAGA-GAME Арены</div>
+            <div className="h3">По всей России и СНГ у нас открыто уже 23 арены, до конца 2022 года планируются открыть 40 арен. Следующая арена может быть и в вашем городе!</div>
+            <div>
+                <div></div>
+                <div className="arenas-right">
+                    <div className="arenas-right-flex">
+                        <div className="h3">Города, в которых есть наша арена:</div>
+                        <div className="arenas-flex">
+                            <div className="arenas-city-yes">Тверь</div>
+                            <div className="arenas-city-yes">Глазов</div>
+                            <div className="arenas-city-yes">Ярославль</div>
+                            <div className="arenas-city-yes">Томск</div>
+                            <div className="arenas-city-yes">Улан-Удэ</div>
+                            <div className="arenas-city-yes">Талдыкорган</div>
+                            <div className="arenas-city-yes">Воронеж</div>
+                            <div className="arenas-city-yes">Екатеринбург</div>
+                            <div className="arenas-city-yes">Нижний Новгород</div>
+                            <div className="arenas-city-yes">Москва</div>
+                            <div className="arenas-city-yes">Новосибирск</div>
+                            <div className="arenas-city-yes">Калининград</div>
+                            <div className="arenas-city-yes">Астрахань</div>
+                            <div className="arenas-city-yes">Бобруйск</div>
+                            <div className="arenas-city-yes">Израиль</div>
+                            <div className="arenas-city-yes">Михельсон</div>
+                            <div className="arenas-city-yes">Волоколамск</div>
+                            <div className="arenas-city-yes">Воскресенск</div>
+                            <div className="arenas-city-yes">Душанбе</div>
+                            <div className="arenas-city-yes">Анапа</div>
+                            <div className="arenas-city-yes">Волгодонск</div>
+                            <div className="arenas-city-yes">Тихорецк</div>
+                            <div className="arenas-city-yes">Нефтеюганск</div>
+                        </div>
+                    </div>
+                    <div className="arenas-right-flex">
+                        <div className="h3">Топ свободных городов:</div>
+                        <div className="arenas-flex">
+                            <div className="arenas-city-no">Санкт-Петербург</div>
+                            <div className="arenas-city-no">Мурманск</div>
+                            <div className="arenas-city-no">Белгород</div>
+                            <div className="arenas-city-no">Нижний-Новгород</div>
+                            <div className="arenas-city-no">Новый уренгой</div>
+                            <div className="arenas-city-no">Махачкала</div>
+                            <div className="arenas-city-no">Салехард</div>
+                            <div className="arenas-city-no">Оренбург</div>
+                            <div className="arenas-city-no">Нур-Султан</div>
+                        </div>
+                    </div>
+                    <button className="button">Проверить свой город</button>
+                </div>
+            </div>
+        </div>
+    </>
+  )
+}
+
+export default Arenas
