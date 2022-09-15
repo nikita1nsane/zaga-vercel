@@ -909,3 +909,23 @@ body {
 .slick-arrow.slick-prev::before {
     content: url('./images/svg/left-arrow.svg');
 }
+
+.gameLib-sliders .slick-arrow.slick-next {
+    right: -5%;
+}
+
+.gameLib-sliders .slick-arrow.slick-prev {
+    left: -5%;
+}
+
+.gameLib-sliders .slick-slide.slick-current {
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.gameLib-sliders .slick-slide {
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
