@@ -1,3 +1,5 @@
+import ComSlider from "./Slider"
+import video from '../images/video-block.png'
 
 
 const Comments = () => {
@@ -6,6 +8,8 @@ const Comments = () => {
         <div className="container comments-block">
             <div className="h2">Отзывы наших партнеров</div>
         </div>
+        <ComSlider img={video} />
+        
     </>
   )
 }

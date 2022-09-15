@@ -1,13 +1,16 @@
-
+import Image from "next/image"
+import map from '../images/map.png'
 
 const Arenas = () => {
   return (
     <>
         <div className="container arenas-block">
             <div className="h2">ZAGA-GAME Арены</div>
-            <div className="h3">По всей России и СНГ у нас открыто уже 23 арены, до конца 2022 года планируются открыть 40 арен. Следующая арена может быть и в вашем городе!</div>
-            <div>
-                <div></div>
+            <div className="h3 h3-title">По всей России и СНГ у нас открыто уже 23 арены, до<br /> конца 2022 года планируются открыть 40 арен.<br /> Следующая арена может быть и в вашем городе!</div>
+            <div className="map-flex">
+                <div className="map-img">
+                    <Image src={map} />
+                </div>
                 <div className="arenas-right">
                     <div className="arenas-right-flex">
                         <div className="h3">Города, в которых есть наша арена:</div>

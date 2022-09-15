@@ -573,7 +573,7 @@ body {
 }
 
 .comments-block {
-    margin-bottom: 140px;
+    margin-bottom: 50px;
 }
 
 .bg-img {
@@ -619,7 +619,7 @@ body {
 }
 
 .photos-block {
-    margin-bottom: 170px;
+    margin-bottom: 50px;
 }
 
 .team-block {
@@ -718,10 +718,15 @@ body {
     margin-bottom: 20px;
 }
 
+.arenas-block .h3-title {
+    margin-bottom: 54px;
+}
+
 .arenas-right {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-left: 50%;
 }
 
 .joinUs-block .phone {
@@ -804,4 +809,103 @@ body {
 
 .footer-right {
     align-self: end;
+}
+
+.gameLib-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.gameLib-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 330px;
+}
+
+.janr {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    color: #CDCDCD;
+    margin-bottom: 6px;
+}
+
+.gameName {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 143%;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+}
+
+.gameDesc {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 138%;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+    height: 154px;
+    overflow: hidden;
+}
+
+.gameFull {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    text-decoration-line: underline;
+    color: #E32966;
+}
+
+.map-flex {
+    display: flex;
+    position: relative;
+}
+
+.map-img {
+    width: max-content;
+    position: absolute;
+    right: 50%;
+    top: -5%;
+}
+
+.slick-slide.slick-current {
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.slick-slide {
+    transform: scale(0.8);
+    transition: 0.5s ease-in-out;
+    opacity: 0.2;
+}
+
+.slick-initialized {
+    margin-bottom: 170px;
+}
+
+.slick-arrow.slick-next {
+    right: 15%;
+}
+
+.slick-arrow.slick-prev {
+    left: 15%;
+}
+
+.slick-arrow.slick-next::before {
+    content: url('./images/svg/right-arrow.svg');
+}
+
+.slick-arrow.slick-prev::before {
+    content: url('./images/svg/left-arrow.svg');
 }
