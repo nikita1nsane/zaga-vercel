@@ -1,0 +1,89 @@
+.header-wa {
+    background-color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;  
+    color: #fff;
+  }
+  .header-wa:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, #11BF52 0%,#11BF52 50%,#25D366 50%,#25D366 100%);
+    transition: left .3s;
+  }
+  .header-wa:hover:before{
+    left: 0;
+  }
+  .header-wa-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .email:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .order {
+    transition: .2s ease-in-out;
+  }
+
+  .order:hover {
+    color: #70358F;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .nav-item {
+    transition: .2s ease-in-out;
+  }
+
+  .nav-item:hover {
+    transition: .2s ease-in-out;
+    color: #E32966;
+    cursor: pointer;
+  }
+
+  .header-button {
+    background-color: black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;  
+    color: #fff;
+  }
+  .header-button:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, #521771 0%,#521771 50%,#70358F 50%,#70358F 100%);
+    transition: left .3s;
+  }
+  .header-button:hover:before{
+    left: 0;
+  }
+  .header-button-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .numbers-block .header-button:before {
+    background: linear-gradient(120.01deg, #E32966 16.64%, #70358F 70.48%, #1B253F 124.96%);
+    left: auto;
+    width: 100%;
+  }
+
+  .numbers-block .header-button:hover:before {
+    background: linear-gradient(240.01deg, #E32966 16.64%, #70358F 70.48%, #1B253F 124.96%);
+    left: auto;
+  }
