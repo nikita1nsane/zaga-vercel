@@ -11,7 +11,19 @@ const ComSlider = (props) => {
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: "20%",
+        centerPadding: "0%",
+        responsive: [
+          {
+              breakpoint: 766,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: true,
+                  arrows: false
+              }
+          },
+      ]
       }
       return (
         <Slider {...settings}>

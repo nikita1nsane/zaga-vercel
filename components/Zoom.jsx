@@ -27,7 +27,7 @@ const Zoom = () => {
             <div className="zoom-right">
                 <div className="h2">Запишитесь на встречу или звонок в Zoom</div>
                 <div className="h3">Поможем с подбором и анализом помещения в вашем городе. Пердоставим чек-лист для подбора помещения и предложим свои варианты.</div>
-                <div>
+                <div className="zoom-button">
                     <button className="button" onClick={() => dispatch(showR5(true))}>Записаться на встречу или звонок</button>
                 </div>
             </div>

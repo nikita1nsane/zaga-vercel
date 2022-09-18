@@ -1,17 +1,21 @@
+import Script from "next/script"
+import Counter from "./RunningNumber"
+
+
 const Advantages = () => {
   return (
-        <div className="advantages-block container">
+        <div className="advantages-block container" id="advantages counter">
             <div className="advantages-top flex-column">
-                <div><span className="color-red h1">300000</span></div>
+                <div><span className="color-red h1"><Counter val={300000} time={10000000} /></span></div>
                 <div><span className="fz-18">гостей нам доверяют</span></div>
             </div>
             <div className="advantages-bottom">
                 <div className="advantages-item flex-column">
-                    <div className="h1 color-red">26</div>
+                    <div className="h1 color-red"><Counter val={26} time={1} /></div>
                     <div className="h6">открытых арен</div>
                 </div>
                 <div className="advantages-item flex-column">
-                    <div className="h1 color-red">30</div>
+                    <div className="h1 color-red"><Counter val={30} time={26/30} /></div>
                     <div className="h6">скоро откроется</div>
                 </div>
                 <div className="advantages-item flex-column">
@@ -21,7 +25,7 @@ const Advantages = () => {
                                 от
                             </div>
                             <div>
-                                100 <span className="h6 last-ot">м2</span>
+                                <Counter val={100} time={10} /> <span className="h6 last-ot">м2</span>
                             </div>
                         </div>
                         <div className="h6">требуемая площадь</div>

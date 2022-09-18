@@ -2,6 +2,8 @@ import { useAppDispatch, useAppSelector } from '../hooks/redux'
 import { UserSlice } from '../store/reducers/UserSlice'
 import {dataForm} from './dataForm/data'
 import Form1 from './forms/Form1'
+import Image from 'next/image'
+import girl from '../images/girl.webp'
 
 const FirstBlock = () => {
 
@@ -11,6 +13,7 @@ const FirstBlock = () => {
 
   return (
     <>
+        <div className="firstBlock">
         <div className="container first-block">
             <div className="complect">
                 <div className="title">
@@ -77,9 +80,17 @@ const FirstBlock = () => {
                     </div>
                 </div>
             </div>
-            <div>
-
+            <div className='mt-20'>
+            <div class="header__content-right">
+            <div class="header__content-banner">
+                <div class="bg_rotate"></div>
+                <div class="header__content-banner-img">
+                    <Image src={girl} />
+                </div>
             </div>
+        </div>
+            </div>
+        </div>
         </div>
     </>
   )

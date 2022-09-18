@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-logo-item footer-mid">Политика конфиденциальности</div>
                 <div className="footer-right">
-                    <div></div>
+                    <div className="footer-logo-item">Политика конфиденциальности</div>
                     <div className="footer-logo-item">
                         Copyright ZAGA-GAME © 2018. Все права защищены.
                     </div>

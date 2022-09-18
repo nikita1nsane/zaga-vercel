@@ -4,6 +4,7 @@ import Form1 from './forms/Form1'
 import { useAppDispatch, useAppSelector } from '../hooks/redux'
 import { UserSlice } from '../store/reducers/UserSlice'
 import {dataForm} from './dataForm/data'
+import Link from 'next/link'
 
 
 
@@ -17,9 +18,8 @@ const Header = () => {
 
   return (
     <>
-       
-            <header className="container">
-                <div className='header'>
+            <header>
+                <div className='header container'>
                     <div className='header-left'>
                         <div className='header-logo'>
                             <Image src={logo} alt='logo' />
@@ -54,21 +54,19 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <header>
+            <header className='header-bot'>
                 <div className='header-bottom'>
                     <div className="container">
                         <nav className='nav'>
-                            <div className='nav-item'>Что такое ZAGA-GAME?</div>
-                            <div className='nav-item'>Франшиза в цифрах</div>
-                            <div className='nav-item'>Работая с нами вы получаете</div>
-                            <div className='nav-item'>Отзывы наших партнёров</div>
+                            <Link href="#whatIs"><a><div className='nav-item'>Что такое ZAGA-GAME?</div></a></Link>
+                            <Link href="#numbers"><a><div className='nav-item'>Франшиза в цифрах</div></a></Link>
+                            <Link href="#withUs"><a><div className='nav-item'>Работая с нами вы получаете</div></a></Link>
+                            <Link href="#comments"><a><div className='nav-item'>Отзывы наших партнёров</div></a></Link>
                         </nav>
                     </div>
                 </div>
             </header>
             {show2 ? <Form1 classes='form-block active' h2={dataForm[1].h2} h3={dataForm[1].h3} button={dataForm[1].button} /> : <Form1 classes='form-block' />}
-            {/* {show ? <FormFinal classes="form-block form-final active" /> : <FormFinal classes='form-block form-final' />} */}
-          
     </>
         
   )

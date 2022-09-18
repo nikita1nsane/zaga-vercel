@@ -44,11 +44,11 @@ const Form1 = (props) => {
                 <form action="" onSubmit={func2}>
                     <div className="flex">
                         <input type="text" placeholder='Ваше имя' />
-                        <input type="text" placeholder='Номер телефона*' />
+                        <input type="phone" placeholder='Номер телефона*' />
                     </div>
-                    <input type="text" placeholder='Ваша почта' />
+                    <input type="email" placeholder='Ваша почта' />
                     <input type="text" placeholder='Ваш город' />
-                    <input type="text" placeholder='Предпочтительное время для связи ' />
+                    <input type="text" placeholder='Предпочтительное время для связи' />
 
                     <div className="text">
                         <span>Отправляя форму, вы соглашаетесь с <a href="" className='policy'>политикой конфиденциальности</a></span>

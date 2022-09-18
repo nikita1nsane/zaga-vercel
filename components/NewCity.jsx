@@ -15,7 +15,7 @@ const NewCity = () => {
         <div className="newCity-block">
             <div className="container newCity">
                 <div className="newCity-left">
-                    <div className="title">Откройте ZAGA-GAME<br /> в своём городе</div>
+                    <div className="title">Откройте<br className='br-765' /> ZAGA-GAME<br /> в своём городе</div>
                     <div className="h3">
                         ZAGA-GAME - является лидером рынка и крупной сетью VR арен! Узнайте, свободен ли ваш город?
                     </div>

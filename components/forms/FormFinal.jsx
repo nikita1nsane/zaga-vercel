@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useAppDispatch, useAppSelector } from '../../hooks/redux'
 import { UserSlice } from '../../store/reducers/UserSlice'
 
@@ -39,6 +40,7 @@ const FormFinal = (props) => {
                 </div>
                 <div className="h3 fw-700">Ознакомьтесь с материалами о франшизе:</div>
                 <div className="links">
+                    <Link href="#whatIs">
                     <div className='links-item'>
                         <div>о ZAGA-GAME</div>
                         <div>
@@ -47,6 +49,8 @@ const FormFinal = (props) => {
                         </svg>
                         </div>
                     </div>
+                    </Link>
+                    <Link href="#numbers">
                     <div className='links-item'>
                         <div>Франшиза в цифрах</div>
                         <div>
@@ -55,6 +59,8 @@ const FormFinal = (props) => {
                         </svg>
                         </div>
                     </div>
+                    </Link>
+                    <Link href="#gameLib">
                     <div className='links-item'>
                         <div>Библиотека игр</div>
                         <div>
@@ -63,6 +69,8 @@ const FormFinal = (props) => {
                         </svg>
                         </div>
                     </div>
+                    </Link>
+                    <Link href="#comments">
                     <div className='links-item'>
                         <div>Отзывы партнёров</div>
                         <div>
@@ -71,6 +79,8 @@ const FormFinal = (props) => {
                         </svg>
                         </div>
                     </div>
+                    </Link>
+                    <Link href="#advantages">
                     <div className='links-item'>
                         <div>Преимущества</div>
                         <div>
@@ -79,6 +89,7 @@ const FormFinal = (props) => {
                         </svg>
                         </div>
                     </div>
+                    </Link>
                 </div>
 
             </div>

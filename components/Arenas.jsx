@@ -65,7 +65,9 @@ const Arenas = () => {
                             <div className="arenas-city-no">Нур-Султан</div>
                         </div>
                     </div>
+                    <div className="arenas-button">
                     <button className="button" onClick={() => dispatch(showR4(true))}>Проверить свой город</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -17,6 +17,18 @@ const GameSlider = (props) => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 766,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            },
+        ]
       }
       return (
         <Slider {...settings}>
