@@ -1,7 +1,17 @@
 import Image from "next/image"
 import numImg from '../images/numbers-img.webp'
 
+import { useAppDispatch, useAppSelector } from '../hooks/redux'
+import { UserSlice } from '../store/reducers/UserSlice'
+import {dataForm} from './dataForm/data'
+import Form1 from './forms/Form1'
+
 const Numbers = () => {
+
+    const {show3} = useAppSelector(state => state.UserReducer)
+    const {showR3} = UserSlice.actions;
+    const dispatch = useAppDispatch();
+
   return (
     <>
         <div className="container numbers-block">
@@ -27,7 +37,7 @@ const Numbers = () => {
                         <div className="ntb-subtitle">1 190 000<br /> рублей</div>
                     </div>
                     <div>
-                        <button className="header-button">
+                        <button className="header-button" onClick={() => dispatch(showR3(true))}>
                             <div className="header-button-text">
                             <span><span className="getPresent">Скачать бизнес-план</span><br /> <span className="getPlus">+ фин.модель</span></span>
                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,6 +55,7 @@ const Numbers = () => {
                             </div>
                         </button>
                     </div>
+                    {show3 ? <Form1 classes='form-block active' h2={dataForm[2].h2} h3={dataForm[2].h3} button={dataForm[2].button} /> : <Form1 classes='form-block' />}
                 </div>
                 <div className="num-third-item">
                     <div className="num-third-block">

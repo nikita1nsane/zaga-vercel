@@ -1,16 +1,23 @@
 import logo from '../images/logo.webp'
 import Image from 'next/image'
 import Form1 from './forms/Form1'
-import { useState } from 'react'
+import { useAppDispatch, useAppSelector } from '../hooks/redux'
+import { UserSlice } from '../store/reducers/UserSlice'
+import {dataForm} from './dataForm/data'
+
 
 
 const Header = () => {
 
-    const [show, setShow] = useState(false)
+    const {show2} = useAppSelector(state => state.UserReducer)
+    const {showR2} = UserSlice.actions;
+    const dispatch = useAppDispatch();
+
 
 
   return (
     <>
+       
             <header className="container">
                 <div className='header'>
                     <div className='header-left'>
@@ -42,7 +49,7 @@ const Header = () => {
                         </div>
                         <div className='wa-both'>
                             <div className='phone bold'>8 (800) 500-40-17</div>
-                            <div className='order' onClick={() => setShow(!show)}>Заказать звонок</div>
+                            <div className='order' onClick={() => dispatch(showR2(true))}>Заказать звонок</div>
                         </div>
                     </div>
                 </div>
@@ -59,7 +66,9 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            {show ? <Form1 classes="form-block active" /> : <Form1 classes="form-block" />}
+            {show2 ? <Form1 classes='form-block active' h2={dataForm[1].h2} h3={dataForm[1].h3} button={dataForm[1].button} /> : <Form1 classes='form-block' />}
+            {/* {show ? <FormFinal classes="form-block form-final active" /> : <FormFinal classes='form-block form-final' />} */}
+          
     </>
         
   )

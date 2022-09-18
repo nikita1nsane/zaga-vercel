@@ -1,8 +1,17 @@
-
+import { useAppDispatch, useAppSelector } from '../hooks/redux'
+import { UserSlice } from '../store/reducers/UserSlice'
+import {dataForm} from './dataForm/data'
+import Form1 from './forms/Form1'
 
 const NewCity = () => {
+
+    const {show4} = useAppSelector(state => state.UserReducer)
+    const {showR4} = UserSlice.actions;
+    const dispatch = useAppDispatch();
+
   return (
     <>
+      {show4 ? <Form1 classes='form-block active' h2={dataForm[3].h2} h3={dataForm[3].h3} button={dataForm[3].button} /> : <Form1 classes='form-block' />}
         <div className="newCity-block">
             <div className="container newCity">
                 <div className="newCity-left">
@@ -11,7 +20,7 @@ const NewCity = () => {
                         ZAGA-GAME - является лидером рынка и крупной сетью VR арен! Узнайте, свободен ли ваш город?
                     </div>
                     <div>
-                        <button className="button">Проверить свой город</button>
+                        <button className="button" onClick={() => dispatch(showR4(true))}>Проверить свой город</button>
                     </div>
                 </div>
                 <div className="newCity-right">

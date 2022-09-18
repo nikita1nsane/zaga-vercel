@@ -12,9 +12,20 @@ import img10 from '../images/withUs/10.webp'
 import img11 from '../images/withUs/11.webp'
 import img12 from '../images/withUs/12.png'
 
+import { useAppDispatch, useAppSelector } from '../hooks/redux'
+import { UserSlice } from '../store/reducers/UserSlice'
+import {dataForm} from './dataForm/data'
+import Form1 from './forms/Form1'
+
 const WorkWithUs = () => {
+
+    const {show} = useAppSelector(state => state.UserReducer)
+    const {showR} = UserSlice.actions;
+    const dispatch = useAppDispatch();
+
   return (
     <>
+       {show ? <Form1 classes='form-block active' h2={dataForm[0].h2} h3={dataForm[0].h3} button={dataForm[0].button} /> : <Form1 classes='form-block' />}
         <div className="container withUs-block">
             <div className='h2'>Работая с нами, вы получаете</div>
             <div className='grid'>
@@ -122,7 +133,7 @@ const WorkWithUs = () => {
                 </div>
             </div>
             <div className='df-jcc'>
-                <button className="header-button">
+                <button className="header-button" onClick={() => dispatch(showR(true))}>
                     <div className="header-button-text">
                     <span><span className="getPresent">Получить презентацию</span><br /> <span className="getPlus">+ комплект материалов</span></span>
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,9 +1,21 @@
 import Image from "next/image"
 import img1 from '../images/join-us.webp'
 
+import { useAppDispatch, useAppSelector } from '../hooks/redux'
+import { UserSlice } from '../store/reducers/UserSlice'
+import {dataForm} from './dataForm/data'
+import Form1 from './forms/Form1'
+
 const JoinUs = () => {
+
+    const {show} = useAppSelector(state => state.UserReducer)
+    const {showR} = UserSlice.actions;
+    const dispatch = useAppDispatch();
+
+
   return (
     <>
+      {show ? <Form1 classes='form-block active' h2={dataForm[0].h2} h3={dataForm[0].h3} button={dataForm[0].button} /> : <Form1 classes='form-block' />}
         <div className="container joinUs-block">
             <div className='joinUs-left'>
                 <div className="h2">Присоединяйтесь!</div>
@@ -11,7 +23,7 @@ const JoinUs = () => {
                 <div className="phone">8 (800) 500-40-17</div>
                 <div className="email">info@zaga-game.com</div>
                 <div className="address">г. Москва, метро Румянцево, БЦ РУМЯНЦЕВО, блок Г, офис 705Г</div>
-                <button className="header-button">
+                <button className="header-button" onClick={() => dispatch(showR(true))}>
                     <div className="header-button-text">
                     <span><span className="getPresent">Получить презентацию</span><br /> <span className="getPlus">+ комплект материалов</span></span>
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,9 +1,20 @@
 import Image from "next/image"
 import img1 from '../images/zoom-img.webp'
 
+import { useAppDispatch, useAppSelector } from '../hooks/redux'
+import { UserSlice } from '../store/reducers/UserSlice'
+import {dataForm} from './dataForm/data'
+import Form1 from './forms/Form1'
+
 const Zoom = () => {
+
+    const {show5} = useAppSelector(state => state.UserReducer)
+    const {showR5} = UserSlice.actions;
+    const dispatch = useAppDispatch();
+
   return (
     <>
+      {show5 ? <Form1 classes='form-block active' h2={dataForm[4].h2} h3={dataForm[4].h3} button={dataForm[4].button} /> : <Form1 classes='form-block' />}
         <div className="container zoom-block">
             <div>
                 <div className="bg-img pos-r">
@@ -17,7 +28,7 @@ const Zoom = () => {
                 <div className="h2">Запишитесь на встречу или звонок в Zoom</div>
                 <div className="h3">Поможем с подбором и анализом помещения в вашем городе. Пердоставим чек-лист для подбора помещения и предложим свои варианты.</div>
                 <div>
-                    <button className="button">Записаться на встречу или звонок</button>
+                    <button className="button" onClick={() => dispatch(showR5(true))}>Записаться на встречу или звонок</button>
                 </div>
             </div>
         </div>

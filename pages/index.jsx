@@ -14,26 +14,36 @@ import Team from "../components/Team"
 import Arenas from "../components/Arenas"
 import JoinUs from "../components/JoinUs"
 import Footer from "../components/Footer"
+import {Provider} from 'react-redux'
+import { setupStore } from "../store/store"
+import FormFinal from "../components/forms/FormFinal"
+ 
+
 
 function HomePage() {
+
+    const store = setupStore();
+
     return (
         <>
-            <Header />
-            <FirstBlock />
-            <VideoBlock />
-            <Advantages />
-            <WhatIs />
-            <Numbers />
-            <NewCity />
-            <GameLibrary />
-            <WorkWithUs />
-            <Comments />
-            <Zoom />
-            <Photos />
-            <Team />
-            <Arenas />
-            <JoinUs />
-            <Footer />
+            <Provider store={store}>
+                <Header />
+                <FirstBlock />
+                <VideoBlock />
+                <Advantages />
+                <WhatIs />
+                <Numbers />
+                <NewCity />
+                <GameLibrary />
+                <WorkWithUs />
+                <Comments />
+                <Zoom />
+                <Photos />
+                <Team />
+                <Arenas />
+                <JoinUs />
+                <Footer />
+            </Provider>
         </>
     )
   }

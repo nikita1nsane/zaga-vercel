@@ -1021,3 +1021,43 @@ input::placeholder {
 .flex input {
     width: 50%;
 }
+
+.close-form {
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+}
+
+.form-final .form {
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.246914) 9.9%, #FFFFFF 42.19%),
+    url('./images/form-final.webp');
+}
+
+.form-final .fw-700 {
+    text-align: left;
+}
+
+.links {
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 183%;
+    text-transform: uppercase;
+    color: #70358F;
+}
+
+.links-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links-item:not(:last-child) {
+    border-bottom: 2px #000 solid;
+}
+
+form .header-button {
+    width: fit-content;
+}

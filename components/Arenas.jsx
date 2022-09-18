@@ -1,9 +1,20 @@
 import Image from "next/image"
 import map from '../images/map.png'
 
+import { useAppDispatch, useAppSelector } from '../hooks/redux'
+import { UserSlice } from '../store/reducers/UserSlice'
+import {dataForm} from './dataForm/data'
+import Form1 from './forms/Form1'
+
 const Arenas = () => {
+
+    const {show4} = useAppSelector(state => state.UserReducer)
+    const {showR4} = UserSlice.actions;
+    const dispatch = useAppDispatch();
+
   return (
     <>
+      {show4 ? <Form1 classes='form-block active' h2={dataForm[3].h2} h3={dataForm[3].h3} button={dataForm[3].button} /> : <Form1 classes='form-block' />}
         <div className="container arenas-block">
             <div className="h2">ZAGA-GAME Арены</div>
             <div className="h3 h3-title">По всей России и СНГ у нас открыто уже 23 арены, до<br /> конца 2022 года планируются открыть 40 арен.<br /> Следующая арена может быть и в вашем городе!</div>
@@ -54,7 +65,7 @@ const Arenas = () => {
                             <div className="arenas-city-no">Нур-Султан</div>
                         </div>
                     </div>
-                    <button className="button">Проверить свой город</button>
+                    <button className="button" onClick={() => dispatch(showR4(true))}>Проверить свой город</button>
                 </div>
             </div>
         </div>

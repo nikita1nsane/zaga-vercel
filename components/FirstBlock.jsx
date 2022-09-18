@@ -1,4 +1,14 @@
+import { useAppDispatch, useAppSelector } from '../hooks/redux'
+import { UserSlice } from '../store/reducers/UserSlice'
+import {dataForm} from './dataForm/data'
+import Form1 from './forms/Form1'
+
 const FirstBlock = () => {
+
+    const {show} = useAppSelector(state => state.UserReducer)
+    const {showR} = UserSlice.actions;
+    const dispatch = useAppDispatch();
+
   return (
     <>
         <div className="container first-block">
@@ -13,7 +23,7 @@ const FirstBlock = () => {
                     <span>Успешный бизнес с доходом до 5 млн. руб.<br /> в сфере виртуальной реальности</span>
                 </div>
                 <div>
-                    <button className="header-button">
+                    <button className="header-button" onClick={() => dispatch(showR(true))}>
                         <div className="header-button-text">
                         <span><span className="getPresent">Получить презентацию</span><br /> <span className="getPlus">+ комплект материалов</span></span>
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,6 +41,7 @@ const FirstBlock = () => {
                         </div>
                     </button>
                 </div>
+                {show ? <Form1 classes='form-block active' h2={dataForm[0].h2} h3={dataForm[0].h3} button={dataForm[0].button} /> : <Form1 classes='form-block' />}
                 <div>
                     <span>*В комплект материалов входит:</span>
                 </div>
