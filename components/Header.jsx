@@ -1,6 +1,6 @@
 import logo from '../images/logo.webp'
 import Image from 'next/image'
-import Form1 from './forms/form1'
+import Form1 from './forms/Form1'
 import { useState } from 'react'
 
 
