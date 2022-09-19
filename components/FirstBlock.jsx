@@ -20,7 +20,7 @@ const FirstBlock = () => {
                     <span>Франшиза VR-арен<br /> ZAGA-GAME под ключ!</span>
                 </div>
                 <div className="subtitle">
-                    <span>Гарантированно приведём<br /> <span className="color-red">в подарок 100 заявок</span> на старте!</span>
+                    <span>Гарантированно приведём<br /> <span className="color-red">в подарок 100 заявок</span><br className='br-320' /> на старте!</span>
                 </div>
                 <div className="successful">
                     <span>Успешный бизнес с доходом до 5 млн. руб.<br /> в сфере виртуальной реальности</span>
@@ -45,7 +45,7 @@ const FirstBlock = () => {
                     </button>
                 </div>
                 {show ? <Form1 classes='form-block active' h2={dataForm[0].h2} h3={dataForm[0].h3} button={dataForm[0].button} /> : <Form1 classes='form-block' />}
-                <div>
+                <div className='whatIs-complex'>
                     <span>*В комплект материалов входит:</span>
                 </div>
                 <div className="complex">

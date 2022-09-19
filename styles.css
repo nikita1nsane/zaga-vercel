@@ -34,6 +34,10 @@ header.header-bot {
     top: 100px;
 }
 
+.br-320 {
+    display: none;
+}
+
 .first-block.container {
     margin-top: 204px;
 }
@@ -1194,7 +1198,7 @@ form .header-button {
 @media (max-width: 1199px) {
     .container {
         width: 755px;
-        margin: 0px 5px;
+        margin: 0px auto;
     }
     .email {
         display: none;
@@ -1411,5 +1415,103 @@ form .header-button {
     }
     .footer-logo2 {
         align-self: auto;
+    }
+}
+
+@media (max-width: 764px) {
+    html {
+        overflow-x: visible;
+    }
+    .container {
+        width: 310px;
+        margin: 0 auto;
+    }
+    .form-block {
+        width: 100vw;
+    }
+    .form {
+        width: 100vw;
+        padding: 40px 5px;
+    }
+    .form .h2 {
+        font-size: 30px;
+    }
+    .form .h3 {
+        font-size: 18px;
+    }
+    .form .pos-r {
+        padding: 0 10px;
+    }
+    form .flex input {
+        width: 100%;
+    }
+    .header__content-banner {
+        min-width: 300px;
+    }
+    .wa-both {
+        display: none;
+    }
+    .whatIs-right {
+        width: auto;
+    }
+    .map-img {
+        width: auto;
+    }
+    .bg-img {
+        width: auto;
+        background-position: center;
+    }
+    .joinUs-left .h2 {
+        font-size: 28px;
+    }
+    .grid {
+        display: grid;
+        margin-bottom: 40px;
+        gap: 20px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8"
+        "item9"
+        "item10"
+        "item11"
+        "img12"
+    }
+    .newCity {
+        flex-direction: column;
+    }
+    .complect {
+        min-width: 300px;
+    }
+    .advantages-bottom {
+        flex-direction: column;
+    }
+    .numbers-second {
+        flex-direction: column;
+    }
+    .numbers-adv {
+        width: 100%;
+    }
+    .num-third-item {
+        min-width: 300px;
+    }
+    .complex {
+        display: none;
+    }
+    .whatIs-complex {
+        display: none;
+    }
+    .first-block.container {
+        margin-top: 104px;
+    }
+    .br-320 {
+        display: block;
     }
 }
