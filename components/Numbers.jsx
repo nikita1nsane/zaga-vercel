@@ -34,7 +34,7 @@ const Numbers = () => {
                 <div className="num-third-item">
                     <div className="num-third-block mb-50">
                         <div className="ntb-title">Стоимость франшизы</div>
-                        <div className="ntb-subtitle">1 190 000<br /> рублей</div>
+                        <div className="ntb-subtitle">1 190 000<br className="br-320-off" /> рублей</div>
                     </div>
                     <div className="numbers-button">
                         <button className="header-button" onClick={() => dispatch(showR3(true))}>

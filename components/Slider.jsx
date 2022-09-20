@@ -11,7 +11,8 @@ const ComSlider = (props) => {
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: "0%",
+        className: 'center',
+        centerPadding: '20%',
         responsive: [
           {
               breakpoint: 766,
@@ -23,6 +24,17 @@ const ComSlider = (props) => {
                   arrows: false
               }
           },
+          {
+            breakpoint: 426,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                arrows: false,
+                centerPadding: '0px'
+            }
+        },
       ]
       }
       return (

@@ -22,6 +22,14 @@ body {
     overflow-x: hidden;
 }
 
+.center {
+    text-align: center;
+}
+
+.fw-400 {
+    font-weight: 400!important;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -1468,7 +1476,7 @@ form .header-button {
         display: grid;
         margin-bottom: 40px;
         gap: 20px;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr auto;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "item1"
@@ -1513,5 +1521,107 @@ form .header-button {
     }
     .br-320 {
         display: block;
+    }
+    .first-block {
+        margin-bottom: 90px;
+    }
+    .advantages-bottom {
+        gap: 30px;
+    }
+    .advantages-block {
+        margin-bottom: 90px;
+    }
+    .whatIs-block .h2 {
+        font-size: 32px;
+    }
+    .whatIs-content {
+        gap: 30px;
+    }
+    .whatIs-block {
+        margin-bottom: 90px;
+    }
+    .ntb-subtitle {
+        height: auto;
+        padding: 20px 5px;
+        font-size: 35px;
+    }
+    .br-320-off {
+        display: none;
+    }
+    .mb-50 {
+        margin-bottom: 20px;
+    }
+    .numbers-block {
+        margin-bottom: 120px;
+    }
+    .newCity {
+        height: auto;
+        text-align: center;
+        gap: 50px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .newCity .h3 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .newCity-left {
+        gap: 30px;
+    }
+    .newCity-block {
+        margin-bottom: 90px;
+    }
+    .h2 {
+        font-size: 30px;
+    }
+    .num-third-img {
+        margin-bottom: 40px;
+    }
+    .slick-slider .slick-dots li {
+        width: 30px;
+    }
+    .grid .item {
+        padding: 10px;
+    }
+    .withUs-block {
+        margin-bottom: 90px;
+    }
+    .zoom-block .h3 {
+        font-weight: 400;
+    }
+    .bg-img {
+        background-size: contain;
+    }
+    .zoom-block {
+        margin-bottom: 90px;
+    }
+    .team-block {
+        margin-bottom: 90px;
+    }
+    .arenas-flex {
+        row-gap: 10px;
+        column-gap: 4px;
+    }
+    .arenas-city-yes, .arenas-city-no {
+        font-size: 14px;
+        padding: 4px 20px;
+        font-weight: 400;
+    }
+    .footer-block {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-left {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .footer-logo2 {
+        text-align: center;
+    }
+    .footer-logo-item {
+        text-align: center;
     }
 }

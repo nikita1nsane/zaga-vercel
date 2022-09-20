@@ -28,6 +28,16 @@ const GameSlider = (props) => {
                     arrows: false
                 }
             },
+            {
+                breakpoint: 426,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    arrows: false
+                }
+            },
         ]
       }
       return (
