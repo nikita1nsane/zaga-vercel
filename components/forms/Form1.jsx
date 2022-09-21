@@ -11,8 +11,9 @@ const Form1 = (props) => {
     const {showR4} = UserSlice.actions;
     const {showR5} = UserSlice.actions;
     const {showRFinal} = UserSlice.actions;
-    const dispatch = useAppDispatch();
     const {showFinal} = useAppSelector(state => state.UserReducer)
+    const dispatch = useAppDispatch();
+
 
     const func = () => {
         dispatch(showR(false))
@@ -30,7 +31,6 @@ const Form1 = (props) => {
 
   return (
     <>
-    {showFinal ? <FormFinal classes='form-block active form-final'/> : <FormFinal classes='form-block' />}
         <div className={props.classes}>
         <div className="close-form" onClick={() => func()}>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +58,7 @@ const Form1 = (props) => {
             </div>
         </div>
         </div>
-        
+        {showFinal ? <FormFinal classes='form-block active form-final'/> : <FormFinal classes='form-block' />}
     </>
   )
 }

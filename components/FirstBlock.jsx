@@ -13,6 +13,7 @@ const FirstBlock = () => {
 
   return (
     <>
+     {show ? <Form1 classes='form-block active' h2={dataForm[0].h2} h3={dataForm[0].h3} button={dataForm[0].button} /> : <Form1 classes='form-block' />}
         <div className="firstBlock">
         <div className="container first-block">
             <div className="complect">
@@ -44,7 +45,7 @@ const FirstBlock = () => {
                         </div>
                     </button>
                 </div>
-                {show ? <Form1 classes='form-block active' h2={dataForm[0].h2} h3={dataForm[0].h3} button={dataForm[0].button} /> : <Form1 classes='form-block' />}
+               
                 <div className='whatIs-complex'>
                     <span>*В комплект материалов входит:</span>
                 </div>
@@ -81,14 +82,14 @@ const FirstBlock = () => {
                 </div>
             </div>
             <div className='mt-20'>
-            <div class="header__content-right">
-            <div class="header__content-banner">
-                <div class="bg_rotate"></div>
-                <div class="header__content-banner-img">
-                    <Image src={girl} />
+                <div class="header__content-right">
+                    <div class="header__content-banner">
+                        <div class="bg_rotate"></div>
+                        <div class="header__content-banner-img">
+                            <Image src={girl} />
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
             </div>
         </div>
         </div>

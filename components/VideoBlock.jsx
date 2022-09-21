@@ -4,9 +4,11 @@ import video from '../images/video-block.png'
 const VideoBlock = () => {
   return (
     <>
-        <div className="container video-block">
+      <div id="video">
+      <div className="container video-block">
             <Image src={video} alt='video' />
         </div>
+      </div>
     </>
   )
 }

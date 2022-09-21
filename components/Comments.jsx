@@ -5,11 +5,12 @@ import video from '../images/video-block.png'
 const Comments = () => {
   return (
     <>
-        <div className="container comments-block" id="comments">
+      <div id="comments">
+      <div className="container comments-block" id="comments">
             <div className="h2">Отзывы наших партнеров</div>
         </div>
         <ComSlider img={video} />
-        
+      </div>
     </>
   )
 }

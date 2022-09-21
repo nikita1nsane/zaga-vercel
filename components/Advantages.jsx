@@ -4,6 +4,7 @@ import Counter from "./RunningNumber"
 
 const Advantages = () => {
   return (
+    <div id="advantages">
         <div className="advantages-block container" id="advantages counter">
             <div className="advantages-top flex-column">
                 <div><span className="color-red h1"><Counter val={300000} time={10000000} /></span></div>
@@ -33,6 +34,7 @@ const Advantages = () => {
                 </div>
             </div>
         </div>
+    </div>
   )
 }
 

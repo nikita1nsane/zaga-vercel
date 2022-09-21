@@ -12,6 +12,7 @@ const NewCity = () => {
   return (
     <>
       {show4 ? <Form1 classes='form-block active' h2={dataForm[3].h2} h3={dataForm[3].h3} button={dataForm[3].button} /> : <Form1 classes='form-block' />}
+        <div id="new-city">
         <div className="newCity-block">
             <div className="container newCity">
                 <div className="newCity-left">
@@ -41,6 +42,7 @@ const NewCity = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </>
   )

@@ -14,6 +14,8 @@ const Numbers = () => {
 
   return (
     <>
+      {show3 ? <Form1 classes='form-block active' h2={dataForm[2].h2} h3={dataForm[2].h3} button={dataForm[2].button} /> : <Form1 classes='form-block' />}
+        <div id="numbers">
         <div className="container numbers-block" id="numbers">
             <h2 className="h2">Франшиза в цифрах</h2>
             <div className="numbers-second">
@@ -55,7 +57,7 @@ const Numbers = () => {
                             </div>
                         </button>
                     </div>
-                    {show3 ? <Form1 classes='form-block active' h2={dataForm[2].h2} h3={dataForm[2].h3} button={dataForm[2].button} /> : <Form1 classes='form-block' />}
+                  
                 </div>
                 <div className="num-third-item">
                     <div className="num-third-block">
@@ -87,6 +89,7 @@ const Numbers = () => {
                             </div>
                         </button>
                     </div>
+        </div>
         </div>
     </>
   )

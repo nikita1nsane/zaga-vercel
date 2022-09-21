@@ -4,6 +4,7 @@ import img1 from '../images/whatis-img.webp'
 const WhatIs = () => {
   return (
     <>
+        <div id="what-is">
         <div className="whatIs-block container" id="whatIs">
             <div className="h2"><span>Что такое ZAGA-GAME?</span></div>
             <div className="h3">
@@ -54,6 +55,7 @@ const WhatIs = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </>
   )

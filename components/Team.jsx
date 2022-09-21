@@ -3,6 +3,7 @@ import React from 'react'
 const Team = () => {
   return (
     <>
+        <div id="team">
         <div className="container team-block">
             <div className="h2">Наша команда</div>
             <div className='flex'>
@@ -31,6 +32,7 @@ const Team = () => {
                     <div className='team-mail'>marketing@zaga-game.com</div>
                 </div>
             </div>
+        </div>
         </div>
     </>
   )

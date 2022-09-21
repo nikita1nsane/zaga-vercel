@@ -1,9 +1,3 @@
-import FormFinal from '../forms/FormFinal';
-import { useAppDispatch, useAppSelector } from '../../hooks/redux'
-import { UserSlice } from '../../store/reducers/UserSlice'
-
-
-
 export const dataForm = [
     {
         id: 1,
@@ -31,7 +25,6 @@ export const dataForm = [
                         </svg>
                     </div>
                 </button>
-                
     },
     {
         id: 2,

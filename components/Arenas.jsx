@@ -15,6 +15,7 @@ const Arenas = () => {
   return (
     <>
       {show4 ? <Form1 classes='form-block active' h2={dataForm[3].h2} h3={dataForm[3].h3} button={dataForm[3].button} /> : <Form1 classes='form-block' />}
+        <div id="arenas">
         <div className="container arenas-block">
             <div className="h2">ZAGA-GAME Арены</div>
             <div className="h3 h3-title">По всей России и СНГ у нас открыто уже 23 арены, до<br /> конца 2022 года планируются открыть 40 арен.<br /> Следующая арена может быть и в вашем городе!</div>
@@ -70,6 +71,7 @@ const Arenas = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </>
   )

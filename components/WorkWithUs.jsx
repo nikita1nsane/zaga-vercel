@@ -26,6 +26,7 @@ const WorkWithUs = () => {
   return (
     <>
        {show ? <Form1 classes='form-block active' h2={dataForm[0].h2} h3={dataForm[0].h3} button={dataForm[0].button} /> : <Form1 classes='form-block' />}
+        <div id="work-with-us">
         <div className="container withUs-block" id="withUs">
             <div className='h2'>Работая с нами, вы получаете</div>
             <div className='grid'>
@@ -129,7 +130,10 @@ const WorkWithUs = () => {
                     <span className="text">Помощь с подбором и анализом помещения в Вашем городе</span>
                 </div>
                 <div className="img12">
-                    <Image src={img12} />
+                <div class="header__content-banner">
+                        <div class="bg_rotate"></div>
+                            <Image src={img12} />
+                    </div>
                 </div>
             </div>
             <div className='df-jcc'>
@@ -151,6 +155,7 @@ const WorkWithUs = () => {
                     </div>
                 </button>
             </div>
+        </div>
         </div>
     </>
   )

@@ -15,6 +15,7 @@ const Zoom = () => {
   return (
     <>
       {show5 ? <Form1 classes='form-block active' h2={dataForm[4].h2} h3={dataForm[4].h3} button={dataForm[4].button} /> : <Form1 classes='form-block' />}
+        <div id="zoom">
         <div className="container zoom-block">
             <div>
                 <div className="bg-img pos-r">
@@ -31,6 +32,7 @@ const Zoom = () => {
                     <button className="button" onClick={() => dispatch(showR5(true))}>Записаться на встречу или звонок</button>
                 </div>
             </div>
+        </div>
         </div>
     </>
   )

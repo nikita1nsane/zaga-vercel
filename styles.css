@@ -20,6 +20,8 @@ body {
     line-height: 150%;
     margin: 0;
     overflow-x: hidden;
+    background: url('https://vrn.zaga-game.ru/themes/zaga/assets/img/main_bg3.svg') #151517;
+    background-size: cover;
 }
 
 .center {
@@ -546,6 +548,51 @@ header.header-bot {
     "item11 img12 img12";
 }
 
+.grid .item.item1 {
+    background: url('./images/svg/grid/grid1.svg') #FFFFFF no-repeat;
+    background-size: cover;
+}
+.grid .item.item2 {
+    background: url('./images/svg/grid/grid2.svg') #FFFFFF no-repeat;
+    background-size: cover;
+}
+.grid .item.item3 {
+    background: url('./images/svg/grid/grid3.svg') #FFFFFF no-repeat;
+    background-size: cover;
+}
+.grid .item.item4 {
+    background: url('./images/svg/grid/grid4.svg') #FFFFFF no-repeat;
+    background-size: cover;
+}
+.grid .item.item5 {
+    background: url('./images/svg/grid/grid5.svg') #FFFFFF no-repeat;
+    background-size: cover;
+}
+.grid .item.item6 {
+    background: url('./images/svg/grid/grid6.svg') #FFFFFF no-repeat;
+    background-size: cover;
+}
+.grid .item.item7 {
+    background: url('./images/svg/grid/grid7.svg') #FFFFFF no-repeat;
+    background-size: cover;
+}
+.grid .item.item8 {
+    background: url('./images/svg/grid/grid8.svg') #FFFFFF no-repeat;
+    background-size: cover;
+}
+.grid .item.item9 {
+    background: url('./images/svg/grid/grid9.svg') #FFFFFF no-repeat;
+    background-size: cover;
+}
+.grid .item.item10 {
+    background: url('./images/svg/grid/grid10.svg') #FFFFFF no-repeat;
+    background-size: cover;
+}
+.grid .item.item11 {
+    background: url('./images/svg/grid/grid11.svg') #FFFFFF no-repeat;
+    background-size: cover;
+}
+
 .br-765 {
     display: none;
 }
@@ -605,7 +652,7 @@ header.header-bot {
 .grid .item .text {
     font-family: 'Gilroy';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
     line-height: 133%;
     color: #000000;
@@ -1120,10 +1167,88 @@ form .header-button {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    /* background-image: url('./images/ellipses_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+/* 
+#advantages {
     background-image: url('./images/ellipses_back.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#arenas {
+    background-image: url('./images/ellipses_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#comments {
+    background-image: url('./images/ellipses_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#team {
+    background-image: url('./images/ellipses_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#video {
+    background-image: url('./images/ellipses_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#what-is {
+    background-image: url('./images/ellipses_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#work-with-us {
+    background-image: url('./images/ellipses_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#zoom {
+    background-image: url('./images/ellipses_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#game-lib {
+    background-image: url('./images/ellipses_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#join-us {
+    background-image: url('./images/ellipses_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#new-city {
+    background-image: url('./images/ellipses_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#numbers {
+    background-image: url('./images/ellipses_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#photos {
+    background-image: url('./images/ellipses_back.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
 
 .bg_rotate {
     background: url('./images/ellipse.webp') no-repeat center;
@@ -1207,6 +1332,12 @@ form .header-button {
     .container {
         width: 755px;
         margin: 0px auto;
+    }
+    .grid .header__content-banner {
+        min-width: auto;
+    }
+    .grid .bg_rotate {
+        background-size: contain;
     }
     .email {
         display: none;
@@ -1367,9 +1498,6 @@ form .header-button {
     .bg_rotate {
         background-size: auto;
     }
-    .header__content-banner {
-        overflow: hidden;
-    }
     html {
         overflow-x: hidden;
     }
@@ -1429,6 +1557,12 @@ form .header-button {
 @media (max-width: 764px) {
     html {
         overflow-x: visible;
+    }
+    .header__content-banner {
+        overflow: hidden;
+    }
+    .bg_rotate {
+        background-size: contain;
     }
     .container {
         width: 310px;
