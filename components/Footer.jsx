@@ -1,5 +1,7 @@
 import Image from "next/image"
 import logo from '../images/logo.webp'
+import yIcon from '../images/svg/youtube-icon.svg'
+import vIcon from '../images/svg/vk-icon.svg'
 
 const Footer = () => {
   return (
@@ -18,10 +20,20 @@ const Footer = () => {
                 </div>
                 <div className="footer-logo-item footer-mid">Политика конфиденциальности</div>
                 <div className="footer-right">
-                    <div className="footer-logo-item">Политика конфиденциальности</div>
-                    <div className="footer-logo-item">
+                    <div className="footer-logo-item d-mid">Политика конфиденциальности</div>
+                    <div className="footer-logo-item right-icons-text">
+                        <div className="f-icons">
+                            <div className="y-icon"><Image src={vIcon} /></div>
+                            <div className="v-icon"><Image src={yIcon} /></div>
+                        </div>
+                        <div>
                         Copyright ZAGA-GAME © 2018. Все права защищены.
+                        </div>
                     </div>
+                </div>
+                <div className="f-icons vis-mid">
+                    <div className="y-icon"><Image src={vIcon} /></div>
+                    <div className="v-icon"><Image src={yIcon} /></div>
                 </div>
             </div>
         </div>

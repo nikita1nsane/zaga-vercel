@@ -40,6 +40,58 @@ header {
     z-index: 998;
 }
 
+.y-icon, .v-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-icons-text {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+}
+
+.footer .vis-mid {
+    display: none;
+}
+
+.policy-block {
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+.policy-block .h2 {
+    margin-bottom: 40px;
+}
+
+.policy-h3 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 143%;
+    margin-bottom: 30px;
+}
+.policy-h4 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 143%;
+    margin-bottom: 40px;
+}
+
+.f-icons {
+    display: flex;
+    gap: 5px;
+}
+
 header.header-bot {
     top: 100px;
 }
@@ -902,8 +954,8 @@ header.header-bot {
     align-self: end;
 }
 
-.footer-right {
-    align-self: end;
+.d-mid {
+    display: none;
 }
 
 .gameLib-slider {
@@ -1333,6 +1385,14 @@ form .header-button {
         width: 755px;
         margin: 0px auto;
     }
+    .footer-right .f-icons {
+        display: none;
+    }
+    .footer .vis-mid {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
     .grid .header__content-banner {
         min-width: auto;
     }
@@ -1537,6 +1597,9 @@ form .header-button {
     }
     .footer-mid {
         display: none;
+    }
+    .d-mid {
+        display: block;
     }
     .footer-right {
         display: flex;
