@@ -945,6 +945,28 @@ form input:focus::placeholder {
     transition: 0.3s ease;
 }
 
+.gameLib-item .inText {
+    padding: 0 20px 0 0;
+}
+
+.slick-initialized .slick-prev:hover:before, .slick-initialized .slick-prev:focus:before, .slick-initialized .slick-next:hover:before, .slick-initialized .slick-next:focus:before {
+    opacity: .75;
+}
+
+.slick-initialized .slick-prev:hover:before, .slick-initialized .slick-next:hover:before {
+    opacity: 1;
+}
+
+input, textarea {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    display: flex;
+    align-items: flex-end;
+}
+
 .footer {
     background: #000;
     padding: 20px 0;
