@@ -20,14 +20,16 @@ const Header = () => {
     <>
             <header>
                 <div className='header container'>
-                    <div className='header-left'>
+                    <Link href='#'>
+                    <div className='header-left cursor'>
                         <div className='header-logo'>
                             <Image src={logo} alt='logo' />
                         </div>
-                        <div className='header-logo2'>
+                        <div className='header-logo2 cursor'>
                         Франшиза VR-арен<br /> полного погружения
                         </div>
                     </div>
+                    </Link>
                     <div className='header-right'>
                         <div className='email'>info@zaga-game.com</div>
                         <div className='wa-both'>

@@ -39,6 +39,36 @@
     cursor: pointer;
   }
 
+  .button {
+    transition: .2s ease-in-out;
+  }
+
+  .button:hover {
+    background-color: #70358F;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .gameFull, .team-mail {
+    transition: .2s ease-in-out;
+  }
+
+  .gameFull:hover, .team-mail:hover {
+    color: #70358F;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+  }
+
+  .arenas-city-yes {
+    transition: .2s ease-in-out;
+  }
+
+  .arenas-city-yes:hover {
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    background-color: #E32966;
+  }
+
   .nav-item {
     transition: .2s ease-in-out;
   }

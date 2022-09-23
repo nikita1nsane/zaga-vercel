@@ -5,6 +5,7 @@ import { useAppDispatch, useAppSelector } from '../hooks/redux'
 import { UserSlice } from '../store/reducers/UserSlice'
 import {dataForm} from './dataForm/data'
 import Form1 from './forms/Form1'
+import Link from "next/link"
 
 const Arenas = () => {
 
@@ -27,29 +28,29 @@ const Arenas = () => {
                     <div className="arenas-right-flex">
                         <div className="h3">Города, в которых есть наша арена:</div>
                         <div className="arenas-flex">
-                            <div className="arenas-city-yes">Тверь</div>
-                            <div className="arenas-city-yes">Глазов</div>
-                            <div className="arenas-city-yes">Ярославль</div>
-                            <div className="arenas-city-yes">Томск</div>
-                            <div className="arenas-city-yes">Улан-Удэ</div>
-                            <div className="arenas-city-yes">Талдыкорган</div>
-                            <div className="arenas-city-yes">Воронеж</div>
-                            <div className="arenas-city-yes">Екатеринбург</div>
-                            <div className="arenas-city-yes">Нижний Новгород</div>
-                            <div className="arenas-city-yes">Москва</div>
-                            <div className="arenas-city-yes">Новосибирск</div>
-                            <div className="arenas-city-yes">Калининград</div>
-                            <div className="arenas-city-yes">Астрахань</div>
-                            <div className="arenas-city-yes">Бобруйск</div>
-                            <div className="arenas-city-yes">Израиль</div>
-                            <div className="arenas-city-yes">Михельсон</div>
-                            <div className="arenas-city-yes">Волоколамск</div>
-                            <div className="arenas-city-yes">Воскресенск</div>
-                            <div className="arenas-city-yes">Душанбе</div>
-                            <div className="arenas-city-yes">Анапа</div>
-                            <div className="arenas-city-yes">Волгодонск</div>
-                            <div className="arenas-city-yes">Тихорецк</div>
-                            <div className="arenas-city-yes">Нефтеюганск</div>
+                            <Link href='https://vrarta.ru/'><div className="arenas-city-yes">Тверь</div></Link>
+                            <Link href='http://vrzoneglazov.tilda.ws/'><div className="arenas-city-yes">Глазов</div></Link>
+                            <Link href='https://pixel-game.ru/'><div className="arenas-city-yes">Ярославль</div></Link>
+                            <Link href='https://unitedgamers70.ru/zaga/'><div className="arenas-city-yes">Томск</div></Link>
+                            <Link href='https://ulan-ude.zaga-game.ru/'><div className="arenas-city-yes">Улан-Удэ</div></Link>
+                            <Link href='https://taldyikorgan.zaga-game.ru/'><div className="arenas-city-yes">Талдыкорган</div></Link>
+                            <Link href='https://vrn.zaga-game.ru/'k><div className="arenas-city-yes">Воронеж</div></Link>
+                            <Link href='https://ekb.zaga-game.ru/'><div className="arenas-city-yes">Екатеринбург</div></Link>
+                            <Link href='https://www.instagram.com/game_emerald_city/'><div className="arenas-city-yes">Нижний Новгород</div></Link>
+                            <Link href='https://vr-real.ru/'><div className="arenas-city-yes">Москва</div></Link>
+                            <Link href='https://vrmatrixnsk.ru/'><div className="arenas-city-yes">Новосибирск</div></Link>
+                            <Link href='https://kld.zaga-game.ru/'><div className="arenas-city-yes">Калининград</div></Link>
+                            <Link href='https://astrakhan.zaga-game.ru/'><div className="arenas-city-yes">Астрахань</div></Link>
+                            <Link href='/'><div className="arenas-city-yes">Бобруйск</div></Link>
+                            <Link href='https://extremetactical.co.il/%D7%90%D7%A7%D7%A1%D7%98%D7%A8%D7%99%D7%9D-vr-%D7%9C%D7%95%D7%97%D7%9E%D7%94-%D7%91%D7%9E%D7%A6%D7%99%D7%90%D7%95%D7%AA-%D7%9E%D7%93%D7%95%D7%9E%D7%94/'><div className="arenas-city-yes">Израиль</div></Link>
+                            <Link href=''><div className="arenas-city-yes">Михельсон</div></Link>
+                            <Link href=''><div className="arenas-city-yes">Волоколамск</div></Link>
+                            <Link href=''><div className="arenas-city-yes">Воскресенск</div></Link>
+                            <Link href=''><div className="arenas-city-yes">Душанбе</div></Link>
+                            <Link href=''><div className="arenas-city-yes">Анапа</div></Link>
+                            <Link href=''><div className="arenas-city-yes">Волгодонск</div></Link>
+                            <Link href=''><div className="arenas-city-yes">Тихорецк</div></Link>
+                            <Link href='https://vk.com/mir_vr_86'><div className="arenas-city-yes">Нефтеюганск</div></Link>
                         </div>
                     </div>
                     <div className="arenas-right-flex">

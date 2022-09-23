@@ -1,6 +1,7 @@
 import { useAppDispatch, useAppSelector } from '../../hooks/redux'
 import { UserSlice } from '../../store/reducers/UserSlice'
 import FormFinal from './FormFinal';
+import InputMask from "react-input-mask";
 
 
 const Form1 = (props) => {
@@ -44,7 +45,7 @@ const Form1 = (props) => {
                 <form action="" onSubmit={func2}>
                     <div className="flex">
                         <input type="text" placeholder='Ваше имя' />
-                        <input type="phone" placeholder='Номер телефона*' />
+                        <InputMask mask="+7 (999) 999-99-99" placeholder='Номер телефона*' />
                     </div>
                     <input type="email" placeholder='Ваша почта' />
                     <input type="text" placeholder='Ваш город' />
