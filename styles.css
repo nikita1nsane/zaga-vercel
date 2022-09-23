@@ -70,6 +70,19 @@ header {
     margin-bottom: 40px;
 }
 
+#join-us {
+    background: #151517;
+    padding-bottom: 30px;
+}
+
+#join-us .h2 {
+    text-align: left;
+}
+
+#join-us .h3 {
+    text-align: left;
+}
+
 .policy-h3 {
     font-family: 'Gilroy';
     font-style: normal;
@@ -922,6 +935,16 @@ header.header-bot {
     width: max-content;
 }
 
+form input::placeholder {
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+form input:focus::placeholder {
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
 .footer {
     background: #000;
     padding: 20px 0;
@@ -1384,6 +1407,13 @@ form .header-button {
     .container {
         width: 755px;
         margin: 0px auto;
+    }
+    #join-us .h2 {
+        text-align: center;
+    }
+    
+    #join-us .h3 {
+        text-align: center;
     }
     .footer-right .f-icons {
         display: none;

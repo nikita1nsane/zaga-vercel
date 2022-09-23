@@ -1,5 +1,5 @@
 import Image from "next/image"
-import map from '../images/map.png'
+import map from '../images/full-map.webp'
 
 import { useAppDispatch, useAppSelector } from '../hooks/redux'
 import { UserSlice } from '../store/reducers/UserSlice'

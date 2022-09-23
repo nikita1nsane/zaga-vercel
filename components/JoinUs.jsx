@@ -1,5 +1,5 @@
 import Image from "next/image"
-import img1 from '../images/join-us.webp'
+import img1 from '../images/join-us2.webp'
 
 import { useAppDispatch, useAppSelector } from '../hooks/redux'
 import { UserSlice } from '../store/reducers/UserSlice'
