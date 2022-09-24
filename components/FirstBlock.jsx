@@ -86,7 +86,7 @@ const FirstBlock = () => {
                     <div className="header__content-banner">
                         <div className="bg_rotate"></div>
                         <div className="header__content-banner-img">
-                            <Image src={girl} />
+                            <Image src={girl} priority />
                         </div>
                     </div>
                 </div>
