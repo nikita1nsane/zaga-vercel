@@ -1,8 +1,11 @@
-import Script from "next/script"
-import Counter from "./RunningNumber"
-
+import dynamic from 'next/dynamic';
 
 const Advantages = () => {
+
+    const Counter = dynamic(() => import('./RunningNumber'), {
+        ssr: false,
+      });
+
   return (
     <div id="advantages">
         <div className="advantages-block container" id="advantages counter">

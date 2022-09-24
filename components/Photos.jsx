@@ -1,7 +1,11 @@
-import ComSlider from "./Slider"
 import img from '../images/photos-slider.webp'
 
 const Photos = () => {
+
+  const ComSlider = dynamic(() => import('./ComSlider'), {
+    ssr: false,
+  });
+
   return (
     <>
       <div id="photos">

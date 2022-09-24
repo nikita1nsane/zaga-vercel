@@ -1,7 +1,12 @@
-import Image from "next/image"
-import GameSlider from "./GameSlider"
+
+import dynamic from "next/dynamic";
 
 const GameLibrary = () => {
+
+  const GameSlider = dynamic(() => import('./GameSlider'), {
+    ssr: false,
+  });
+
   return (
     <>
       <div id="game-lib">

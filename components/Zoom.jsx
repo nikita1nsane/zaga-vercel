@@ -1,6 +1,3 @@
-import Image from "next/image"
-import img1 from '../images/zoom-img.webp'
-
 import { useAppDispatch, useAppSelector } from '../hooks/redux'
 import { UserSlice } from '../store/reducers/UserSlice'
 import {dataForm} from './dataForm/data'
