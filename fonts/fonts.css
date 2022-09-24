@@ -31,9 +31,3 @@
     font-weight: 700;
     font-display: swap;
 }
-
-@font-face {
-    font-family: 'slick';
-    src: url('slick.653a4cbb.woff');
-    font-display: swap;
-}
