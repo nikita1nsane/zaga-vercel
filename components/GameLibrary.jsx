@@ -1,11 +1,7 @@
 
-import dynamic from "next/dynamic";
+import GameSlider from './GameSlider';
 
 const GameLibrary = () => {
-
-  const GameSlider = dynamic(() => import('./GameSlider'), {
-    ssr: false,
-  });
 
   return (
     <>

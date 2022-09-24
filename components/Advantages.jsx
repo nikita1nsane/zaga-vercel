@@ -1,10 +1,6 @@
-import dynamic from 'next/dynamic';
+import Counter from './RunningNumber';
 
 const Advantages = () => {
-
-    const Counter = dynamic(() => import('./RunningNumber'), {
-        ssr: false,
-      });
 
   return (
     <div id="advantages">

@@ -3,55 +3,25 @@ import { setupStore } from "../store/store"
 import FirstBlock from '../components/FirstBlock'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-
-import dynamic from "next/dynamic"
+import VideoBlock from '../components/VideoBlock'
+import Advantages from '../components/Advantages'
+import WhatIs from '../components/WhatIs'
+import Numbers from '../components/Numbers'
+import NewCity from '../components/NewCity'
+import GameLibrary from '../components/GameLibrary'
+import WorkWithUs from '../components/WorkWithUs'
+import Comments from '../components/Comments'
+import Zoom from '../components/Zoom'
+import Photos from '../components/Photos'
+import Team from '../components/Team'
+import Arenas from '../components/Arenas'
+import JoinUs from '../components/JoinUs'
  
 
 
 function HomePage() {
 
     const store = setupStore();
-
-      const VideoBlock = dynamic(() => import('../components/VideoBlock'), {
-        ssr: false,
-      });
-      const Advantages = dynamic(() => import('../components/Advantages'), {
-        ssr: false,
-      });
-      const WhatIs = dynamic(() => import('../components/WhatIs'), {
-        ssr: false,
-      });
-      const Numbers = dynamic(() => import('../components/Numbers'), {
-        ssr: false,
-      });
-      const NewCity = dynamic(() => import('../components/NewCity'), {
-        ssr: false,
-      });
-      const GameLibrary = dynamic(() => import('../components/GameLibrary'), {
-        ssr: false,
-      });
-      const WorkWithUs = dynamic(() => import('../components/WorkWithUs'), {
-        ssr: false,
-      });
-      const Comments = dynamic(() => import('../components/Comments'), {
-        ssr: false,
-      });
-      const Zoom = dynamic(() => import('../components/Zoom'), {
-        ssr: false,
-      });
-      const Photos = dynamic(() => import('../components/Photos'), {
-        ssr: false,
-      });
-      const Team = dynamic(() => import('../components/Team'), {
-        ssr: false,
-      });
-      const Arenas = dynamic(() => import('../components/Arenas'), {
-        ssr: false,
-      });
-      const JoinUs = dynamic(() => import('../components/JoinUs'), {
-        ssr: false,
-      });
-
 
     return (
         <>

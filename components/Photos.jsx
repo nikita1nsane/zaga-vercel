@@ -1,11 +1,7 @@
 import img from '../images/photos-slider.webp'
-import dynamic from 'next/dynamic';
+import ComSlider from './Slider';
 
 const Photos = () => {
-
-  const ComSlider = dynamic(() => import('./Slider'), {
-    ssr: false,
-  });
 
   return (
     <>
