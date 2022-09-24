@@ -1,5 +1,8 @@
 import {Provider} from 'react-redux'
 import { setupStore } from "../store/store"
+import FirstBlock from '../components/FirstBlock'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 import dynamic from "next/dynamic"
  
@@ -8,12 +11,7 @@ import dynamic from "next/dynamic"
 function HomePage() {
 
     const store = setupStore();
-    const Header = dynamic(() => import('../components/Header'), {
-        ssr: false,
-      });
-      const FirstBlock = dynamic(() => import('../components/FirstBlock'), {
-        ssr: false,
-      });
+
       const VideoBlock = dynamic(() => import('../components/VideoBlock'), {
         ssr: false,
       });
@@ -53,9 +51,7 @@ function HomePage() {
       const JoinUs = dynamic(() => import('../components/JoinUs'), {
         ssr: false,
       });
-      const Footer = dynamic(() => import('../components/Footer'), {
-        ssr: false,
-      });
+
 
     return (
         <>
