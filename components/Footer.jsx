@@ -2,6 +2,7 @@ import Image from "next/image"
 import logo from '../images/logo.webp'
 import yIcon from '../images/svg/youtube-icon.svg'
 import vIcon from '../images/svg/vk-icon.svg'
+import Link from "next/link"
 
 const Footer = () => {
   return (
@@ -18,9 +19,9 @@ const Footer = () => {
                         <div className="footer-logo-item">ОГРН: 1132130015555</div>
                     </div>
                 </div>
-                <div className="footer-logo-item footer-mid">Политика конфиденциальности</div>
+                <Link href='/policy'><div className="footer-logo-item footer-mid policy">Политика конфиденциальности</div></Link>
                 <div className="footer-right">
-                    <div className="footer-logo-item d-mid">Политика конфиденциальности</div>
+                    <Link href='/policy'><div className="footer-logo-item d-mid policy">Политика конфиденциальности</div></Link>
                     <div className="footer-logo-item right-icons-text">
                         <div className="f-icons">
                             <div className="y-icon"><Image src={vIcon} /></div>

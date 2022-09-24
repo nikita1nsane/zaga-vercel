@@ -962,6 +962,17 @@ form input:focus::placeholder {
     opacity: 1;
 }
 
+.policy {
+    transition: .2s ease;
+}
+
+.policy:hover {
+    transition: .2s ease;
+    text-decoration: underline;
+    color: #E32966;
+    cursor: pointer;
+}
+
 input, textarea {
     font-family: 'Gilroy';
     font-style: normal;
@@ -1049,8 +1060,7 @@ input, textarea {
     line-height: 138%;
     color: #FFFFFF;
     margin-bottom: 6px;
-    height: 154px;
-    overflow: hidden;
+
 }
 
 .gameFull {

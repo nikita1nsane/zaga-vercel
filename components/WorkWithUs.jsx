@@ -130,8 +130,8 @@ const WorkWithUs = () => {
                     <span className="text">Помощь с подбором и анализом помещения в Вашем городе</span>
                 </div>
                 <div className="img12">
-                <div class="header__content-banner">
-                        <div class="bg_rotate"></div>
+                <div className="header__content-banner">
+                        <div className="bg_rotate"></div>
                             <Image src={img12} />
                     </div>
                 </div>

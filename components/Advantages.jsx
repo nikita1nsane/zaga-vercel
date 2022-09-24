@@ -7,7 +7,7 @@ const Advantages = () => {
     <div id="advantages">
         <div className="advantages-block container" id="advantages counter">
             <div className="advantages-top flex-column">
-                <div><span className="color-red h1"><Counter val={300000} time={1000000000000000} /></span></div>
+                <div><span className="color-red h1"><Counter val={30} time={1} />0000</span></div>
                 <div><span className="fz-18">гостей нам доверяют</span></div>
             </div>
             <div className="advantages-bottom">

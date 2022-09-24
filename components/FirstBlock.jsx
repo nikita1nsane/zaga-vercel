@@ -82,10 +82,10 @@ const FirstBlock = () => {
                 </div>
             </div>
             <div className='mt-20'>
-                <div class="header__content-right">
-                    <div class="header__content-banner">
-                        <div class="bg_rotate"></div>
-                        <div class="header__content-banner-img">
+                <div className="header__content-right">
+                    <div className="header__content-banner">
+                        <div className="bg_rotate"></div>
+                        <div className="header__content-banner-img">
                             <Image src={girl} />
                         </div>
                     </div>

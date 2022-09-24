@@ -1,4 +1,3 @@
-import { loadGetInitialProps } from "next/dist/shared/lib/utils";
 import { useState, useEffect } from "react"
 
 export default function Counter({ val, time }) {
