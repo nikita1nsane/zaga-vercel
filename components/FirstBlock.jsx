@@ -13,7 +13,7 @@ const FirstBlock = () => {
 
   return (
     <>
-     {show ? <Form1 classes='form-block active' h2={dataForm[0].h2} h3={dataForm[0].h3} button={dataForm[0].button} /> : <Form1 classes='form-block' />}
+     {/* {show ? <Form1 classes='form-block active' h2={dataForm[0].h2} h3={dataForm[0].h3} button={dataForm[0].button} /> : <Form1 classes='form-block' />} */}
         <div className="firstBlock">
         <div className="container first-block">
             <div className="complect">
@@ -21,12 +21,9 @@ const FirstBlock = () => {
                     <span>Франшиза VR-арен<br /> ZAGA-GAME под ключ!</span>
                 </div>
                 <div className="subtitle">
-                    <span>Гарантированно приведём<br /> <span className="color-red">в подарок 100 заявок</span><br className='br-320' /> на старте!</span>
+                    <span>Успешный бизнес <span className='color-red fw-800'>с доходом до 5 млн. руб.</span><br /> в сфере виртуальной реальности</span>
                 </div>
-                <div className="successful">
-                    <span>Успешный бизнес с доходом до 5 млн. руб.<br /> в сфере виртуальной реальности</span>
-                </div>
-                <div>
+                <div className='btnHead'>
                     <button className="header-button" onClick={() => dispatch(showR(true))}>
                         <div className="header-button-text">
                         <span><span className="getPresent">Получить презентацию</span><br /> <span className="getPlus">+ комплект материалов</span></span>

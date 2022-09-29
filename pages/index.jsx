@@ -16,6 +16,7 @@ import Photos from '../components/Photos'
 import Team from '../components/Team'
 import Arenas from '../components/Arenas'
 import JoinUs from '../components/JoinUs'
+import MainPage from '../components/MainPage'
  
 
 
@@ -26,22 +27,24 @@ function HomePage() {
     return (
         <>
             <Provider store={store}>
-                <Header />
-                <FirstBlock />
-                <VideoBlock />
-                <Advantages />
-                <WhatIs />
-                <Numbers />
-                <NewCity />
-                <GameLibrary />
-                <WorkWithUs />
-                <Comments />
-                <Zoom />
-                <Photos />
-                <Team />
-                <Arenas />
-                <JoinUs />
-                <Footer />
+                <MainPage>
+                    {/* <Header />
+                    <FirstBlock />
+                    <VideoBlock />
+                    <Advantages />
+                    <WhatIs />
+                    <Numbers />
+                    <NewCity />
+                    <GameLibrary />
+                    <WorkWithUs />
+                    <Comments />
+                    <Zoom />
+                    <Photos />
+                    <Team />
+                    <Arenas />
+                    <JoinUs />
+                    <Footer /> */}
+                </MainPage>
             </Provider>
         </>
     )

@@ -10,11 +10,8 @@ import Link from 'next/link'
 
 const Header = () => {
 
-    const {show2} = useAppSelector(state => state.UserReducer)
     const {showR2} = UserSlice.actions;
     const dispatch = useAppDispatch();
-
-
 
   return (
     <>
@@ -68,7 +65,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            {show2 ? <Form1 classes='form-block active' h2={dataForm[1].h2} h3={dataForm[1].h3} button={dataForm[1].button} /> : <Form1 classes='form-block' />}
+            {/* {show2 ? <Form1 classes='form-block active' h2={dataForm[1].h2} h3={dataForm[1].h3} button={dataForm[1].button} /> : <Form1 classes='form-block' />} */}
     </>
         
   )

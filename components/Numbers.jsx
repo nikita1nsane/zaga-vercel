@@ -14,7 +14,7 @@ const Numbers = () => {
 
   return (
     <>
-      {show3 ? <Form1 classes='form-block active' h2={dataForm[2].h2} h3={dataForm[2].h3} button={dataForm[2].button} /> : <Form1 classes='form-block' />}
+      {/* {show3 ? <Form1 classes='form-block active' h2={dataForm[2].h2} h3={dataForm[2].h3} button={dataForm[2].button} /> : <Form1 classes='form-block' />} */}
         <div id="numbers">
         <div className="container numbers-block" id="numbers">
             <h2 className="h2">Франшиза в цифрах</h2>

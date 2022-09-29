@@ -45,6 +45,10 @@ header {
     z-index: 998;
 }
 
+.fw-800 {
+    font-weight: 800!important;
+}
+
 .y-icon, .v-icon {
     width: 20px;
     height: 20px;
@@ -226,6 +230,11 @@ header.header-bot {
     margin-right: 8px;
 }
 
+.whatIs-complex {
+    font-size: 13px;
+    font-weight: 700;
+}
+
 .wa-both {
     display: flex;
     gap: 4px;
@@ -287,6 +296,16 @@ header.header-bot {
 
 .complect div:not(:last-child) {
     margin-bottom: 10px;
+}
+
+.first-block .complect .title {
+    margin-bottom: 30px;
+}
+.first-block .complect .subtitle {
+    margin-bottom: 30px;
+}
+.first-block .complect .btnHead {
+    margin-bottom: 20px;
 }
 
 .color-red {
@@ -997,6 +1016,10 @@ input, textarea {
     align-self: center;
 }
 
+.disabled {
+    display: none;
+}
+
 .footer-logo-item {
     font-family: 'Gilroy';
     font-style: normal;
@@ -1264,6 +1287,10 @@ form .header-button {
 
 .first-block {
     display: flex;
+}
+
+.first-block .subtitle {
+    font-weight: 400;
 }
 
 .complect {
