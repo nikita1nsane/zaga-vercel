@@ -1,10 +1,10 @@
-import logo from '../images/logo.webp'
 import Image from 'next/image'
 import Form1 from './forms/Form1'
 import { useAppDispatch, useAppSelector } from '../hooks/redux'
 import { UserSlice } from '../store/reducers/UserSlice'
 import {dataForm} from './dataForm/data'
 import Link from 'next/link'
+import logo from '../images/svg/logo.svg'
 
 
 
@@ -20,7 +20,7 @@ const Header = () => {
                     <Link href='#'>
                     <div className='header-left cursor'>
                         <div className='header-logo'>
-                            <Image src={logo} alt='logo' />
+                            <Image src={logo} alt='logo' quality={100} />
                         </div>
                         <div className='header-logo2 cursor'>
                         Франшиза VR-арен<br /> полного погружения
