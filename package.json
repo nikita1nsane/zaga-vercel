@@ -9,6 +9,7 @@
     "@reduxjs/toolkit": "^1.8.5",
     "@trendyol-js/react-carousel": "^3.0.0",
     "@types/react-input-mask": "^3.0.1",
+    "animate.css": "^4.1.1",
     "embla-carousel-react": "^7.0.3",
     "next": "^12.2.5",
     "react": "^18.2.0",

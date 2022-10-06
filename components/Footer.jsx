@@ -1,5 +1,5 @@
 import Image from "next/image"
-import logo from '../images/logo.webp'
+import logo from '../images/svg/logo.svg'
 import yIcon from '../images/svg/youtube-icon.svg'
 import vIcon from '../images/svg/vk-icon.svg'
 import Link from "next/link"

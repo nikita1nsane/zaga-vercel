@@ -250,6 +250,13 @@ header.header-bot {
     text-align: center;
 }
 
+.map-img svg {
+    position: absolute;
+    z-index: 2;
+    left: 867px;
+    top: 170px;
+}
+
 .order {
     font-weight: 500;
     font-size: 16px;
