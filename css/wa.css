@@ -105,6 +105,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    text-align-last: left;
   }
 
   .numbers-block .header-button:before {

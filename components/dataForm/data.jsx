@@ -10,7 +10,7 @@ export const dataForm = [
             </div>,
         button: <button className="header-button">
                     <div className="header-button-text">
-                    <span><span className="getPresent">Получить презентацию</span><br /> <span className="getPlus">+ комплект материалов</span></span>
+                    <span><span className="getPresent">ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ</span><br /> <span className="getPlus">+ комплект материалов</span></span>
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M27.5989 5.46631L23.9473 0H18.2646C18.0596 0 17.8594 0.0429687 17.6758 0.124023L13.9316 7.36924L6.54199 10.8087C6.45117 11.002 6.40234 11.2149 6.40234 11.4337V45.4174C6.40234 46.226 7.05859 46.8822 7.86719 46.8822H23.9473L27.5989 42.5785V5.46631Z" fill="#E4EBF2"/>
                             <path d="M17.6748 0.125V9.34482C17.6748 10.1534 17.0186 10.8097 16.21 10.8097H6.54102C6.61719 10.6495 6.72168 10.5021 6.85254 10.3771L17.25 0.408203C17.374 0.288086 17.5186 0.193359 17.6748 0.125Z" fill="#CCD6E7"/>

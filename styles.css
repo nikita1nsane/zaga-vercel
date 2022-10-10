@@ -362,6 +362,7 @@ header.header-bot {
     font-weight: 700;
     font-size: 16px;
     line-height: 162%;
+    text-transform: uppercase;
 }
 
 .getPlus {
