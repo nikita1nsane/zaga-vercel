@@ -1732,6 +1732,17 @@ form .header-button {
 }
 
 @media (max-width: 765px) {
+    .dn-765 {
+        display: none;
+    }
+    .complex-item {
+        width: 32%;
+        text-align: left;
+        align-items: center;
+    }
+    .complex svg {
+        min-width: 24px;
+    }
     .burger {
         display: block;
     }
