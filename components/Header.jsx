@@ -5,10 +5,14 @@ import { UserSlice } from '../store/reducers/UserSlice'
 import {dataForm} from './dataForm/data'
 import Link from 'next/link'
 import logo from '../images/svg/logo.svg'
+import burger from '../images/burger.svg'
+import { useState } from 'react'
 
 
 
 const Header = () => {
+
+    const [toggler, setToggler] = useState(false);
 
     const {showR2} = UserSlice.actions;
     const dispatch = useAppDispatch();
@@ -51,6 +55,12 @@ const Header = () => {
                             <div className='order' onClick={() => dispatch(showR2(true))}>Заказать звонок</div>
                         </div>
                     </div>
+                    <div className='burger' onClick={() => {
+                        setToggler(!toggler)
+                    }}>
+                        <Image src={burger} />
+                    </div>
+
                 </div>
             </header>
             <header className='header-bot'>
@@ -64,6 +74,17 @@ const Header = () => {
                         </nav>
                     </div>
                 </div>
+                {toggler &&                 
+                <div className='header-bottom burger-bottom'>
+                    <div className="container">
+                        <nav className='nav vertical'>
+                            <Link href="#whatIs"><a><div className='nav-item'>Что такое ZAGA-GAME?</div></a></Link>
+                            <Link href="#numbers"><a><div className='nav-item'>Франшиза в цифрах</div></a></Link>
+                            <Link href="#withUs"><a><div className='nav-item'>Работая с нами вы получаете</div></a></Link>
+                            <Link href="#comments"><a><div className='nav-item'>Отзывы наших партнёров</div></a></Link>
+                        </nav>
+                    </div>
+                </div>}
             </header>
             {/* {show2 ? <Form1 classes='form-block active' h2={dataForm[1].h2} h3={dataForm[1].h3} button={dataForm[1].button} /> : <Form1 classes='form-block' />} */}
     </>

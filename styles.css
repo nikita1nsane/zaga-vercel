@@ -126,6 +126,10 @@ header.header-bot {
     margin-top: 204px;
 }
 
+.burger {
+    display: none;
+}
+
 .container {
     width: 1030px;
     margin: auto;
@@ -691,6 +695,9 @@ header.header-bot {
 }
 
 .br-765 {
+    display: none;
+}
+.burger {
     display: none;
 }
 
@@ -1716,6 +1723,29 @@ form .header-button {
     }
     .footer-logo2 {
         align-self: auto;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+@media (max-width: 765px) {
+    .burger {
+        display: block;
+    }
+    .header {
+        justify-content: space-between;
+    }
+    .vertical {
+        flex-direction: column;
+    }
+    .burger-bottom {
+        display: block!important;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+        background: #151517;
     }
 }
 

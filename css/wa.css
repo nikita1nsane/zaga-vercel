@@ -44,7 +44,7 @@
   }
 
   .button:hover {
-    background-color: #70358F;
+    background-color: #C50B48;
     transition: .2s ease-in-out;
     cursor: pointer;
   }
@@ -109,12 +109,15 @@
   }
 
   .numbers-block .header-button:before {
-    background: linear-gradient(120.01deg, #E32966 16.64%, #70358F 70.48%, #1B253F 124.96%);
+    background: linear-gradient(from 120.01deg, #E32966 16.64%, #70358F 70.48%, #1B253F 124.96%);
     left: auto;
     width: 100%;
+    transition: all .4s ease-in-out;
+    background-size: contain;
   }
 
   .numbers-block .header-button:hover:before {
     background: linear-gradient(240.01deg, #E32966 16.64%, #70358F 70.48%, #1B253F 124.96%);
     left: auto;
+    transition: all .4s ease-in-out;
   }
