@@ -13,7 +13,7 @@ import ReadMore from './ReadMore'
 
 const GameSlider = (props) => {
     var settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
         className: 'game-lib-sl',

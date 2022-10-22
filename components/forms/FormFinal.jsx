@@ -70,7 +70,7 @@ const FormFinal = (props) => {
                         </div>
                     </div>
                     </Link>
-                    <Link href="#comments">
+                    {/* <Link href="#comments">
                     <div className='links-item'>
                         <div>Отзывы партнёров</div>
                         <div>
@@ -79,8 +79,8 @@ const FormFinal = (props) => {
                         </svg>
                         </div>
                     </div>
-                    </Link>
-                    <Link href="#advantages">
+                    </Link> */}
+                    <Link href="#withUs">
                     <div className='links-item'>
                         <div>Преимущества</div>
                         <div>

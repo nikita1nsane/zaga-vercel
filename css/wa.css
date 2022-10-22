@@ -34,7 +34,7 @@
   }
 
   .order:hover {
-    color: #70358F;
+    color: #C50B48;
     transition: .2s ease-in-out;
     cursor: pointer;
   }
@@ -54,12 +54,12 @@
   }
 
   .gameFull:hover, .team-mail:hover {
-    color: #70358F;
+    color: #C50B48;
     transition: .2s ease-in-out;
     cursor: pointer;
   }
 
-  .arenas-city-yes {
+  .arenas-city-yes, .arenas-city-no {
     transition: .2s ease-in-out;
   }
 
@@ -67,6 +67,12 @@
     transition: .2s ease-in-out;
     cursor: pointer;
     background-color: #E32966;
+  }
+
+  .arenas-city-no:hover {
+    background-color: #70358F;
+    cursor: pointer;
+    transition: .2s ease-in-out;
   }
 
   .nav-item {
@@ -93,11 +99,13 @@
     left: -100%;
     width: 200%;
     height: 100%;
-    background: linear-gradient(to right, #521771 0%,#521771 50%,#70358F 50%,#70358F 100%);
-    transition: left .3s;
+    background: #70358F;
+    transition: .7s ease;
   }
   .header-button:hover:before{
     left: 0;
+    background: #521771;
+    transition: .7s ease;
   }
   .header-button-text{
     position: relative;
@@ -105,19 +113,14 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    text-align-last: left;
+    text-align: left;
+    font-family: 'Gilroy';
   }
 
   .numbers-block .header-button:before {
-    background: linear-gradient(from 120.01deg, #E32966 16.64%, #70358F 70.48%, #1B253F 124.96%);
-    left: auto;
-    width: 100%;
-    transition: all .4s ease-in-out;
-    background-size: contain;
+    background: linear-gradient(120.01deg, #E32966 16.64%, #70358F 70.48%, #1B253F 124.96%);
   }
 
   .numbers-block .header-button:hover:before {
     background: linear-gradient(240.01deg, #E32966 16.64%, #70358F 70.48%, #1B253F 124.96%);
-    left: auto;
-    transition: all .4s ease-in-out;
   }

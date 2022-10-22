@@ -81,7 +81,7 @@ header {
 
 #join-us {
     background: #151517;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 
 #join-us .h2 {
@@ -254,6 +254,17 @@ header.header-bot {
     text-align: center;
 }
 
+.phone:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #C50B48!important;
+    transition: all .3s ease-in-out;
+}
+
+#video {
+    margin-bottom: 80px;
+}
+
 .map-img svg {
     position: absolute;
     z-index: 2;
@@ -370,9 +381,13 @@ header.header-bot {
 }
 
 .getPlus {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 162%;
+}
+
+.whatIs-text .gilroy-400 {
+    font-size: 16px;
 }
 
 .first-block {
@@ -797,7 +812,7 @@ header.header-bot {
 }
 
 .zoom-block .h3 {
-    font-weight: 500;
+    font-weight: 400;
     text-align: left;
     margin-bottom: 40px;
 }
@@ -989,21 +1004,23 @@ form input:focus::placeholder {
 }
 
 .slick-initialized .slick-prev:hover:before, .slick-initialized .slick-prev:focus:before, .slick-initialized .slick-next:hover:before, .slick-initialized .slick-next:focus:before {
-    opacity: .75;
+    opacity: 1;
 }
 
 .slick-initialized .slick-prev:hover:before, .slick-initialized .slick-next:hover:before {
     opacity: 1;
+    color: #C50B48;
 }
 
 .policy {
     transition: .2s ease;
+    color: #E32966;;
 }
 
 .policy:hover {
     transition: .2s ease;
     text-decoration: underline;
-    color: #E32966;
+    color: #C50B48;
     cursor: pointer;
 }
 
@@ -1243,7 +1260,7 @@ input {
 input::placeholder {
     font-family: 'Gilroy';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 125%;
     display: flex;
@@ -1269,6 +1286,7 @@ input::placeholder {
 .form-final .form {
     background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.246914) 9.9%, #FFFFFF 42.19%),
     url('./images/form-final.webp');
+    background-position: bottom;
 }
 
 .form-final .fw-700 {
@@ -1722,7 +1740,7 @@ form .header-button {
         justify-content: start;
     }
     .footer-logo2 {
-        align-self: auto;
+        align-self: center;
     }
 }
 
@@ -1963,5 +1981,14 @@ form .header-button {
     }
     .footer-logo-item {
         text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .header-button {
+        padding: 10px 20px;
+    }
+    .getPresent {
+        font-size: 15px;
     }
 }

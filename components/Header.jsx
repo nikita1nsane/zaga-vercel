@@ -70,7 +70,7 @@ const Header = () => {
                             <Link href="#whatIs"><a><div className='nav-item'>Что такое ZAGA-GAME?</div></a></Link>
                             <Link href="#numbers"><a><div className='nav-item'>Франшиза в цифрах</div></a></Link>
                             <Link href="#withUs"><a><div className='nav-item'>Работая с нами вы получаете</div></a></Link>
-                            <Link href="#comments"><a><div className='nav-item'>Отзывы наших партнёров</div></a></Link>
+                            {/* <Link href="#comments"><a><div className='nav-item'>Отзывы наших партнёров</div></a></Link> */}
                         </nav>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ const Header = () => {
                             <Link href="#whatIs"><a onClick={() => {setToggler(!toggler)}}><div className='nav-item'>Что такое ZAGA-GAME?</div></a></Link>
                             <Link href="#numbers"><a  onClick={() => {setToggler(!toggler)}}><div className='nav-item'>Франшиза в цифрах</div></a></Link>
                             <Link href="#withUs"><a  onClick={() => {setToggler(!toggler)}}><div className='nav-item'>Работая с нами вы получаете</div></a></Link>
-                            <Link href="#comments"><a  onClick={() => {setToggler(!toggler)}}><div className='nav-item'>Отзывы наших партнёров</div></a></Link>
+                            {/* <Link href="#comments"><a  onClick={() => {setToggler(!toggler)}}><div className='nav-item'>Отзывы наших партнёров</div></a></Link> */}
                         </nav>
                     </div>
                 </div>}

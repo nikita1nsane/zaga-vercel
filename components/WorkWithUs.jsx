@@ -37,7 +37,7 @@ const WorkWithUs = () => {
                         alt='img'
                     />
                     </div>
-                    <span className="text">Бизнес <span className="color-red">без</span> ежемесячных роялти и паушального взноса</span>
+                    <span className="text">Бизнес <span className="color-red fw-500">без</span> ежемесячных роялти и паушального взноса</span>
                 </div>
                 <div className="item item2">
                     <div className="img">

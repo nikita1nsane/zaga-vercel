@@ -16,10 +16,10 @@ const Zoom = () => {
         <div className="container zoom-block">
             <div>
                 <div className="bg-img pos-r">
-                    <div className="pos-aa">
+                    {/* <div className="pos-aa">
                         <span className="gendir">Генеральный директор</span><br />
                         <span className="gendir-name">Евгений Исаков</span>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <div className="zoom-right">

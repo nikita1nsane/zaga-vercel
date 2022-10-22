@@ -30,11 +30,11 @@ const MainPage = () => {
 
   return (
     <>
-        {  show ? <Form1 classes='form-block active' h2={dataForm[0].h2} h3={dataForm[0].h3} button={dataForm[0].button} />
+        {  show ? <Form1 classes='form-block active' h2={dataForm[0].h2} h3={dataForm[0].h3} button={dataForm[0].button} mail={dataForm[0].mail} />
           : show2 ? <Form1 classes='form-block active' h2={dataForm[1].h2} h3={dataForm[1].h3} button={dataForm[1].button} />
-          : show3 ? <Form1 classes='form-block active' h2={dataForm[2].h2} h3={dataForm[2].h3} button={dataForm[2].button} />
-          : show4 ? <Form1 classes='form-block active' h2={dataForm[3].h2} h3={dataForm[3].h3} button={dataForm[3].button} />
-          : show5 ? <Form1 classes='form-block active' h2={dataForm[4].h2} h3={dataForm[4].h3} button={dataForm[4].button} />
+          : show3 ? <Form1 classes='form-block active' h2={dataForm[2].h2} h3={dataForm[2].h3} button={dataForm[2].button} mail={dataForm[2].mail} />
+          : show4 ? <Form1 classes='form-block active' h2={dataForm[3].h2} h3={dataForm[3].h3} button={dataForm[3].button} mail={dataForm[3].mail} city={dataForm[3].city} time={dataForm[3].time} />
+          : show5 ? <Form1 classes='form-block active' h2={dataForm[4].h2} h3={dataForm[4].h3} button={dataForm[4].button} mail={dataForm[4].mail} time={dataForm[4].time} />
           : showFinal ? <Form1 classes='form-block active' h2={dataForm[5].h2} h3={dataForm[5].h3} button={dataForm[5].button} />
           : <Form1 classes='form-block' />
         }
@@ -47,7 +47,7 @@ const MainPage = () => {
         <NewCity />
         <GameLibrary />
         <WorkWithUs />
-        <Comments />
+        {/* <Comments /> */}
         <Zoom />
         <Photos />
         <Team />

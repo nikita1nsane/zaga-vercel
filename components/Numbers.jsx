@@ -25,18 +25,18 @@ const Numbers = () => {
                 </div>
                 <div className="numbers-adv">
                     <div className="numbers-title">Срок выхода на точку<br /> безубыточности</div>
-                    <div className="numbers-subtitle">3 месяца</div>
+                    <div className="numbers-subtitle">от 1 месяца</div>
                 </div>
                 <div className="numbers-adv">
                     <div className="numbers-title">Срок окупаемости</div>
-                    <div className="numbers-subtitle">от 8 месяцев</div>
+                    <div className="numbers-subtitle">от 5 месяцев</div>
                 </div>
             </div>
             <div className="numbers-third">
                 <div className="num-third-item">
                     <div className="num-third-block mb-50">
                         <div className="ntb-title">Стоимость франшизы</div>
-                        <div className="ntb-subtitle">1 190 000<br className="br-320-off" /> рублей</div>
+                        <div className="ntb-subtitle">1 290 000<br className="br-320-off" /> рублей</div>
                     </div>
                     <div className="numbers-button">
                         <button className="header-button" onClick={() => dispatch(showR3(true))}>

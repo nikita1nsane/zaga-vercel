@@ -56,29 +56,29 @@ const Arenas = () => {
                     <div className="arenas-right-flex">
                         <div className="h3">Города, в которых есть наша арена:</div>
                         <div className="arenas-flex">
-                            <Link href='https://vrarta.ru/'><div className="arenas-city-yes">Тверь</div></Link>
-                            <Link href='http://vrzoneglazov.tilda.ws/'><div className="arenas-city-yes">Глазов</div></Link>
-                            <Link href='https://pixel-game.ru/'><div className="arenas-city-yes">Ярославль</div></Link>
-                            <Link href='https://unitedgamers70.ru/zaga/'><div className="arenas-city-yes">Томск</div></Link>
-                            <Link href='https://ulan-ude.zaga-game.ru/'><div className="arenas-city-yes">Улан-Удэ</div></Link>
-                            <Link href='https://taldyikorgan.zaga-game.ru/'><div className="arenas-city-yes">Талдыкорган</div></Link>
-                            <Link href='https://vrn.zaga-game.ru/'k><div className="arenas-city-yes">Воронеж</div></Link>
-                            <Link href='https://ekb.zaga-game.ru/'><div className="arenas-city-yes">Екатеринбург</div></Link>
-                            <Link href='https://www.instagram.com/game_emerald_city/'><div className="arenas-city-yes">Нижний Новгород</div></Link>
-                            <Link href='https://vr-real.ru/'><div className="arenas-city-yes">Москва</div></Link>
-                            <Link href='https://vrmatrixnsk.ru/'><div className="arenas-city-yes">Новосибирск</div></Link>
-                            <Link href='https://kld.zaga-game.ru/'><div className="arenas-city-yes">Калининград</div></Link>
-                            <Link href='https://astrakhan.zaga-game.ru/'><div className="arenas-city-yes">Астрахань</div></Link>
-                            <Link href='/'><div className="arenas-city-yes">Бобруйск</div></Link>
-                            <Link href='https://extremetactical.co.il/%D7%90%D7%A7%D7%A1%D7%98%D7%A8%D7%99%D7%9D-vr-%D7%9C%D7%95%D7%97%D7%9E%D7%94-%D7%91%D7%9E%D7%A6%D7%99%D7%90%D7%95%D7%AA-%D7%9E%D7%93%D7%95%D7%9E%D7%94/'><div className="arenas-city-yes">Израиль</div></Link>
-                            <Link href=''><div className="arenas-city-yes">Михельсон</div></Link>
-                            <Link href=''><div className="arenas-city-yes">Волоколамск</div></Link>
-                            <Link href=''><div className="arenas-city-yes">Воскресенск</div></Link>
-                            <Link href=''><div className="arenas-city-yes">Душанбе</div></Link>
-                            <Link href=''><div className="arenas-city-yes">Анапа</div></Link>
-                            <Link href=''><div className="arenas-city-yes">Волгодонск</div></Link>
-                            <Link href=''><div className="arenas-city-yes">Тихорецк</div></Link>
-                            <Link href='https://vk.com/mir_vr_86'><div className="arenas-city-yes">Нефтеюганск</div></Link>
+                            <a target='_blank' href='https://vrarta.ru/'><div className="arenas-city-yes">Тверь</div></a>
+                            <a target='_blank' href='http://vrzoneglazov.tilda.ws/'><div className="arenas-city-yes">Глазов</div></a>
+                            <a target='_blank' href='https://pixel-game.ru/'><div className="arenas-city-yes">Ярославль</div></a>
+                            <a target='_blank' href='https://unitedgamers70.ru/zaga/'><div className="arenas-city-yes">Томск</div></a>
+                            <a target='_blank' href='https://ulan-ude.zaga-game.ru/'><div className="arenas-city-yes">Улан-Удэ</div></a>
+                            <a target='_blank' href='https://taldyikorgan.zaga-game.ru/'><div className="arenas-city-yes">Талдыкорган</div></a>
+                            <a target='_blank' href='https://vrn.zaga-game.ru/'k><div className="arenas-city-yes">Воронеж</div></a>
+                            <a target='_blank' href='https://ekb.zaga-game.ru/'><div className="arenas-city-yes">Екатеринбург</div></a>
+                            <a target='_blank' href='https://www.instagram.com/game_emerald_city/'><div className="arenas-city-yes">Нижний Новгород</div></a>
+                            <a target='_blank' href='https://vr-real.ru/'><div className="arenas-city-yes">Москва</div></a>
+                            <a target='_blank' href='https://vrmatrixnsk.ru/'><div className="arenas-city-yes">Новосибирск</div></a>
+                            <a target='_blank' href='https://kld.zaga-game.ru/'><div className="arenas-city-yes">Калининград</div></a>
+                            <a target='_blank' href='https://astrakhan.zaga-game.ru/'><div className="arenas-city-yes">Астрахань</div></a>
+                            <a target='_blank' href='/'><div className="arenas-city-yes">Бобруйск</div></a>
+                            <a target='_blank' href='https://extremetactical.co.il/%D7%90%D7%A7%D7%A1%D7%98%D7%A8%D7%99%D7%9D-vr-%D7%9C%D7%95%D7%97%D7%9E%D7%94-%D7%91%D7%9E%D7%A6%D7%99%D7%90%D7%95%D7%AA-%D7%9E%D7%93%D7%95%D7%9E%D7%94/'><div className="arenas-city-yes">Израиль</div></a>
+                            <a target='_blank' href=''><div className="arenas-city-yes">Михельсон</div></a>
+                            <a target='_blank' href=''><div className="arenas-city-yes">Волоколамск</div></a>
+                            <a target='_blank' href=''><div className="arenas-city-yes">Воскресенск</div></a>
+                            <a target='_blank' href=''><div className="arenas-city-yes">Душанбе</div></a>
+                            <a target='_blank' href=''><div className="arenas-city-yes">Анапа</div></a>
+                            <a target='_blank' href=''><div className="arenas-city-yes">Волгодонск</div></a>
+                            <a target='_blank' href=''><div className="arenas-city-yes">Тихорецк</div></a>
+                            <a target='_blank' href='https://vk.com/mir_vr_86'><div className="arenas-city-yes">Нефтеюганск</div></a>
                         </div>
                     </div>
                     <div className="arenas-right-flex">
