@@ -2,6 +2,7 @@ import { useAppDispatch, useAppSelector } from '../../hooks/redux'
 import { UserSlice } from '../../store/reducers/UserSlice'
 import FormFinal from './FormFinal';
 import InputMask from "react-input-mask";
+import { useEffect, useState } from 'react';
 
 
 const Form1 = (props) => {
@@ -27,8 +28,40 @@ const Form1 = (props) => {
 
     function func2(e) {
         e.preventDefault();
-        dispatch(showRFinal(true))
+        dispatch(showRFinal(true));
+        ym(88105763,'reachGoal','zakaz')
     }
+
+    const [phonik, setPhonik] = useState('')
+    const [phonikDirty, setPhonikDirty] = useState(false)
+    const [phonikError, setPhonikError] = useState('Номер телефона не может быть пустым')
+    const [formValid, setFormValid] = useState(false)
+
+    useEffect(() => {
+        if (phonikError) {
+            setFormValid(false)
+        } else {
+            setFormValid(true)
+        }
+    }, [phonikError])
+
+    const phonikHandler = (e) => {
+        setPhonik(e.target.value)
+        if (e.target.selectionEnd < 18) {
+            setPhonikError('Некорректный телефон')
+        } else {
+            setPhonikError('')
+        }
+    }
+
+    const blurHandler = (e) => {
+        switch (e.target.name) {
+            case 'phone':
+                setPhonikDirty(true)
+                break
+        }
+    }
+
 
   return (
     <>
@@ -45,7 +78,8 @@ const Form1 = (props) => {
                 <form action="" onSubmit={func2}>
                     <div className="flex">
                         <input type="text" placeholder='Как к вам обращаться?' />
-                        <InputMask mask="+7 (999) 999-99-99" placeholder={`Ваш номер телефона*`} />
+                        <InputMask onChange={e => phonikHandler(e)} name='phone' type='phone' value={phonik} onBlur={e => blurHandler(e)} mask="+7 (999) 999-99-99" maskChar={null} placeholder={`Ваш номер телефона*`} />
+                        {(phonikDirty && phonikError) && <div style={{color: 'red'}}>{phonikError}</div> }
                     </div>
                     {props.mail}
                     {props.city}
@@ -54,7 +88,7 @@ const Form1 = (props) => {
                     <div className="text">
                         <span>Отправляя форму, вы соглашаетесь с <a href="" className='policy'>политикой конфиденциальности</a></span>
                     </div>
-                    {props.button}
+                    {!formValid ? props.buttond : props.button}
                 </form>
             </div>
         </div>

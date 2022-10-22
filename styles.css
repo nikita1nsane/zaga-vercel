@@ -15,6 +15,19 @@ a {
     cursor: pointer;
 }
 
+.slick-slider .slick-dots li {
+    background: #FFFFFF;
+    border-radius: 50px;
+    width: 50px;
+    height: 3px;
+}
+.slick-slider .slick-dots {
+    bottom: -20px;
+}
+#photos .slick-dots li button::before {
+    content: '';
+}
+
 body {
     background: #151517;
     color: white;

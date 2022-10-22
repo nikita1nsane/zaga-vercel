@@ -21,8 +21,8 @@ const JoinUs = () => {
             <div className='joinUs-left'>
                 <div className="h2">Присоединяйтесь!</div>
                 <div className="h3">Узнайте подробные условия о открытии своей арены в виртуальной реальности</div>
-                <div className="phone">8 (800) 500-40-17</div>
-                <div className="email">info@zaga-game.com</div>
+                <div className="phone" >8 (800) 500-40-17</div>
+                <div className="email" >info@zaga-game.com</div>
                 <div className="address">г. Москва, метро Румянцево, БЦ РУМЯНЦЕВО, блок Г, офис 705Г</div>
                 <button className="header-button" onClick={() => dispatch(showR(true))}>
                     <div className="header-button-text">

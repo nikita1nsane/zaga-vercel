@@ -67,7 +67,7 @@ const Numbers = () => {
                     <div></div>
                 </div>
                 <div className="num-third-img">
-                    <Image src={numImg} alt='img' />
+                        <Image src={numImg} alt='img' />
                 </div>
             </div>
             <div className="numbers-button2">

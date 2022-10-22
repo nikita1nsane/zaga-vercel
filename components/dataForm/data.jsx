@@ -27,7 +27,12 @@ export const dataForm = [
                             <path d="M26.123 17.4102H23.9473V27.1759C24.4873 27.1759 24.9238 26.7384 24.9238 26.1993V23.7765C25.3633 23.7745 25.8457 23.7726 26.123 23.7726C27.9004 23.7726 29.3477 22.3458 29.3477 20.5909C29.3477 18.837 27.9004 17.4102 26.123 17.4102ZM26.123 21.8194C25.8467 21.8194 25.3701 21.8214 24.9336 21.8233C24.9277 20.5431 24.9316 21.0421 24.9268 19.3634H26.123C26.8115 19.3634 27.3945 19.9259 27.3945 20.5909C27.3945 21.2569 26.8115 21.8194 26.123 21.8194Z" fill="#E4EBF2"/>
                         </svg>
                     </div>
-                </button>
+                </button>,
+        buttond: <button className="header-button" disabled>
+        <div className="header-button-text">
+        <span><span className="getPresent">Введите корректные данные</span></span>
+        </div>
+        </button>
     },
     {
         id: 2,
@@ -44,7 +49,12 @@ export const dataForm = [
                     <div className="header-button-text">
                     <span><span className="getPresent">ПОЗВОНИТЕ МНЕ</span></span>
                     </div>
-                </button>
+                </button>,
+        buttond: <button className="header-button" disabled>
+            <div className="header-button-text">
+            <span><span className="getPresent">Введите корректные данные</span></span>
+            </div>
+        </button>
     },
     {
         id: 3,
@@ -74,6 +84,11 @@ export const dataForm = [
         city: <input type="text" placeholder='Ваш город' />,
         mail: <input type="email" placeholder='E-mail для отправки материалов' />,
         time: <input type="text" placeholder='Предпочтительное время для связи' />,
+        buttond: <button className="header-button" disabled>
+        <div className="header-button-text">
+        <span><span className="getPresent">Введите корректные данные</span></span>
+        </div>
+        </button>
     },
     {
         id: 4,
@@ -91,6 +106,11 @@ export const dataForm = [
         city: <input type="text" placeholder='Ваш город' />,
         mail: <input type="email" placeholder='E-mail для отправки материалов' />,
         time: <input type="text" placeholder='Предпочтительное время для связи' />,
+        buttond: <button className="header-button" disabled>
+        <div className="header-button-text">
+        <span><span className="getPresent">Введите корректные данные</span></span>
+        </div>
+        </button>
     },
     {
         id: 5,
@@ -108,5 +128,10 @@ export const dataForm = [
         city: <input type="text" placeholder='Ваш город' />,
         mail: <input type="email" placeholder='E-mail для отправки материалов' />,
         time: <input type="text" placeholder='Предпочтительное время для связи' />,
+        buttond: <button className="header-button" disabled>
+        <div className="header-button-text">
+        <span><span className="getPresent">Введите корректные данные</span></span>
+        </div>
+        </button>
     },
 ]
