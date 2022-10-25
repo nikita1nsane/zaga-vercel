@@ -23,22 +23,22 @@ const Arenas = () => {
             <div className="map-flex">
                 <div className="map-img">
                 <svg width="390" height="272" viewBox="0 0 390 272" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="329" cy="48" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="120" cy="216" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="110" cy="162" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="112" cy="148" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="110" cy="146" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="116" cy="132" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="216" cy="67" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="222" cy="113" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="297" cy="193" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="262" cy="4" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="262" cy="152" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="81" cy="111" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="57" cy="148" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="85" cy="218" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="132" cy="148" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
-                    <circle cx="262" cy="71" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
+                    <circle cx="329" cy="48" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="120" cy="216" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="110" cy="162" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="112" cy="148" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="110" cy="146" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="116" cy="132" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="216" cy="67" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="222" cy="113" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="297" cy="193" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="262" cy="4" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="262" cy="152" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="81" cy="111" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="57" cy="148" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="85" cy="218" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="132" cy="148" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
+                    <circle cx="262" cy="71" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower animate__delay-2s"/>
                     <circle cx="85" cy="268" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
                     <circle cx="94" cy="203" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>
                     <circle cx="77" cy="166" r="2" stroke="#E32966" stroke-width="3" className="animate__animated animate__flash animate__infinite	infinite animate__slower"/>

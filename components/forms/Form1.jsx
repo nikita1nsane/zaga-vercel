@@ -35,7 +35,7 @@ const Form1 = (props) => {
 
     const [phonik, setPhonik] = useState('')
     const [phonikDirty, setPhonikDirty] = useState(false)
-    const [phonikError, setPhonikError] = useState('Поле с номером не заполненоaaaa')
+    const [phonikError, setPhonikError] = useState('Поле с номером не заполнено')
     const [formValid, setFormValid] = useState(false)
 
     useEffect(() => {
@@ -76,7 +76,7 @@ const Form1 = (props) => {
             <div className="pos-r">
                 {props.h2}
                 {props.h3}
-                {(phonikDirty && phonikError) && <div style={{color: 'red'}}>{phonikError}</div> }
+                {(phonikDirty && phonikError) && <div style={{color: 'red', textAlign: 'right'}}>{phonikError}</div> }
                 <form action="" onSubmit={func2}>
                     <div className="flex">
                         <input type="text" placeholder='Как к вам обращаться?' />
