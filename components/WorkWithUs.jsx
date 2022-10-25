@@ -11,6 +11,7 @@ import img9 from '../images/withUs/9.svg'
 import img10 from '../images/withUs/10.svg'
 import img11 from '../images/withUs/11.svg'
 import img12 from '../images/withUs/12.png'
+import circle from '../images/workwithus-circle.webp'
 
 import { useAppDispatch, useAppSelector } from '../hooks/redux'
 import { UserSlice } from '../store/reducers/UserSlice'
@@ -129,11 +130,13 @@ const WorkWithUs = () => {
                     </div>
                     <span className="text">Помощь с подбором и анализом помещения в Вашем городе</span>
                 </div>
-                <div className="img12">
-                <div className="header__content-banner">
-                        <div className="bg_rotate"></div>
-                            <Image src={img12} />
-                    </div>
+                <div className="img12 pos-aaa">
+
+                            <div className="pos-aa">
+                            <Image src={circle} className='circle' />
+                            <Image src={img12} className='wwu-bg' />
+                            </div>
+
                 </div>
             </div>
             <div className='df-jcc'>

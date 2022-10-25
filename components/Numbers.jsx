@@ -1,5 +1,6 @@
 import Image from "next/image"
 import numImg from '../images/numbers-img.webp'
+import circle from '../images/circle-around.webp'
 
 import { useAppDispatch, useAppSelector } from '../hooks/redux'
 import { UserSlice } from '../store/reducers/UserSlice'
@@ -67,6 +68,7 @@ const Numbers = () => {
                     <div></div>
                 </div>
                 <div className="num-third-img">
+                        <Image src={circle} className='circle' />
                         <Image src={numImg} alt='img' />
                 </div>
             </div>

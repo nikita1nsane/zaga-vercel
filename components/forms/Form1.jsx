@@ -3,6 +3,7 @@ import { UserSlice } from '../../store/reducers/UserSlice'
 import FormFinal from './FormFinal';
 import InputMask from "react-input-mask";
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 
 const Form1 = (props) => {
@@ -34,7 +35,7 @@ const Form1 = (props) => {
 
     const [phonik, setPhonik] = useState('')
     const [phonikDirty, setPhonikDirty] = useState(false)
-    const [phonikError, setPhonikError] = useState('Номер телефона не может быть пустым')
+    const [phonikError, setPhonikError] = useState('Поле с номером не заполненоaaaa')
     const [formValid, setFormValid] = useState(false)
 
     useEffect(() => {
@@ -48,7 +49,7 @@ const Form1 = (props) => {
     const phonikHandler = (e) => {
         setPhonik(e.target.value)
         if (e.target.selectionEnd < 18) {
-            setPhonikError('Некорректный телефон')
+            setPhonikError('Поле с номером не заполнено')
         } else {
             setPhonikError('')
         }
@@ -75,18 +76,18 @@ const Form1 = (props) => {
             <div className="pos-r">
                 {props.h2}
                 {props.h3}
+                {(phonikDirty && phonikError) && <div style={{color: 'red'}}>{phonikError}</div> }
                 <form action="" onSubmit={func2}>
                     <div className="flex">
                         <input type="text" placeholder='Как к вам обращаться?' />
-                        <InputMask onChange={e => phonikHandler(e)} name='phone' type='phone' value={phonik} onBlur={e => blurHandler(e)} mask="+7 (999) 999-99-99" maskChar={null} placeholder={`Ваш номер телефона*`} />
-                        {(phonikDirty && phonikError) && <div style={{color: 'red'}}>{phonikError}</div> }
+                        <InputMask onChange={e => phonikHandler(e)} name='phone' type='phone' value={phonik} onBlur={e => blurHandler(e)} mask="+7 (999) 999-99-99"  maskChar={null} placeholder={`Ваш номер телефона*`} />
                     </div>
                     {props.mail}
                     {props.city}
                     {props.time}
 
                     <div className="text">
-                        <span>Отправляя форму, вы соглашаетесь с <a href="" className='policy'>политикой конфиденциальности</a></span>
+                        <span>Отправляя форму, вы соглашаетесь с <Link href="/policy"><a политикой className='policy'>политикой конфиденциальности</a></Link></span>
                     </div>
                     {!formValid ? props.buttond : props.button}
                 </form>

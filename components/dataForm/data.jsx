@@ -28,9 +28,9 @@ export const dataForm = [
                         </svg>
                     </div>
                 </button>,
-        buttond: <button className="header-button" disabled>
+        buttond: <button className="header-button header-buttond" disabled>
         <div className="header-button-text">
-        <span><span className="getPresent">Введите корректные данные</span></span>
+        <span><span className="getPresent">ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ</span><br /> <span className="getPlus">+ комплект материалов</span></span>
         </div>
         </button>
     },
@@ -50,9 +50,9 @@ export const dataForm = [
                     <span><span className="getPresent">ПОЗВОНИТЕ МНЕ</span></span>
                     </div>
                 </button>,
-        buttond: <button className="header-button" disabled>
+        buttond: <button className="header-button header-buttond" disabled>
             <div className="header-button-text">
-            <span><span className="getPresent">Введите корректные данные</span></span>
+            <span><span className="getPresent">ПОЗВОНИТЕ МНЕ</span></span>
             </div>
         </button>
     },
@@ -84,9 +84,9 @@ export const dataForm = [
         city: <input type="text" placeholder='Ваш город' />,
         mail: <input type="email" placeholder='E-mail для отправки материалов' />,
         time: <input type="text" placeholder='Предпочтительное время для связи' />,
-        buttond: <button className="header-button" disabled>
+        buttond: <button className="header-button header-buttond" disabled>
         <div className="header-button-text">
-        <span><span className="getPresent">Введите корректные данные</span></span>
+        <span><span className="getPresent">СКАЧАТЬ БИЗНЕС-ПЛАН</span><br /> <span className="getPlus">+ фин.модель</span></span>
         </div>
         </button>
     },
@@ -106,9 +106,9 @@ export const dataForm = [
         city: <input type="text" placeholder='Ваш город' />,
         mail: <input type="email" placeholder='E-mail для отправки материалов' />,
         time: <input type="text" placeholder='Предпочтительное время для связи' />,
-        buttond: <button className="header-button" disabled>
+        buttond: <button className="header-button header-buttond" disabled>
         <div className="header-button-text">
-        <span><span className="getPresent">Введите корректные данные</span></span>
+        <span><span className="getPresent">ПРОВЕРИТЬ СВОЙ ГОРОД</span></span>
         </div>
         </button>
     },
@@ -128,9 +128,9 @@ export const dataForm = [
         city: <input type="text" placeholder='Ваш город' />,
         mail: <input type="email" placeholder='E-mail для отправки материалов' />,
         time: <input type="text" placeholder='Предпочтительное время для связи' />,
-        buttond: <button className="header-button" disabled>
+        buttond: <button className="header-button header-buttond" disabled>
         <div className="header-button-text">
-        <span><span className="getPresent">Введите корректные данные</span></span>
+        <span><span className="getPresent">ЗАПИСАТЬСЯ НА<br />ВСТРЕЧУ ИЛИ ЗВОНОК</span></span>
         </div>
         </button>
     },

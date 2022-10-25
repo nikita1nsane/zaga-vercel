@@ -21,7 +21,7 @@ const Header = () => {
     <>
             <header>
                 <div className='header container'>
-                    <Link href='#'>
+                    <Link href='/'>
                     <div className='header-left cursor'>
                         <div className='header-logo'>
                             <Image src={logo} alt='logo' quality={100} />
@@ -67,9 +67,9 @@ const Header = () => {
                 <div className='header-bottom'>
                     <div className="container">
                         <nav className='nav'>
-                            <Link href="#whatIs"><a><div className='nav-item'>Что такое ZAGA-GAME?</div></a></Link>
-                            <Link href="#numbers"><a><div className='nav-item'>Франшиза в цифрах</div></a></Link>
-                            <Link href="#withUs"><a><div className='nav-item'>Работая с нами вы получаете</div></a></Link>
+                            <Link href="/#whatIs"><a><div className='nav-item'>Что такое ZAGA-GAME?</div></a></Link>
+                            <Link href="/#numbers"><a><div className='nav-item'>Франшиза в цифрах</div></a></Link>
+                            <Link href="/#withUs"><a><div className='nav-item'>Работая с нами вы получаете</div></a></Link>
                             {/* <Link href="#comments"><a><div className='nav-item'>Отзывы наших партнёров</div></a></Link> */}
                         </nav>
                     </div>
@@ -78,9 +78,9 @@ const Header = () => {
                 <div className='header-bottom burger-bottom'>
                     <div className="container">
                         <nav className='nav vertical'>
-                            <Link href="#whatIs"><a onClick={() => {setToggler(!toggler)}}><div className='nav-item'>Что такое ZAGA-GAME?</div></a></Link>
-                            <Link href="#numbers"><a  onClick={() => {setToggler(!toggler)}}><div className='nav-item'>Франшиза в цифрах</div></a></Link>
-                            <Link href="#withUs"><a  onClick={() => {setToggler(!toggler)}}><div className='nav-item'>Работая с нами вы получаете</div></a></Link>
+                            <Link href="/#whatIs"><a onClick={() => {setToggler(!toggler)}}><div className='nav-item'>Что такое ZAGA-GAME?</div></a></Link>
+                            <Link href="/#numbers"><a  onClick={() => {setToggler(!toggler)}}><div className='nav-item'>Франшиза в цифрах</div></a></Link>
+                            <Link href="/#withUs"><a  onClick={() => {setToggler(!toggler)}}><div className='nav-item'>Работая с нами вы получаете</div></a></Link>
                             {/* <Link href="#comments"><a  onClick={() => {setToggler(!toggler)}}><div className='nav-item'>Отзывы наших партнёров</div></a></Link> */}
                         </nav>
                     </div>
