@@ -369,6 +369,10 @@ header.header-bot {
     background: gray;
 }
 
+.video-block > div:hover > div {
+    background-color: transparent!important;
+}
+
 .header-bottom {
     background: #000;
 }
