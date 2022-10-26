@@ -76,11 +76,12 @@ const Form1 = (props) => {
             <div className="pos-r">
                 {props.h2}
                 {props.h3}
-                {(phonikDirty && phonikError) && <div style={{color: 'red', textAlign: 'right'}}>{phonikError}</div> }
+                
                 <form action="" onSubmit={func2}>
                     <div className="flex">
                         <input type="text" placeholder='Как к вам обращаться?' />
-                        <InputMask onChange={e => phonikHandler(e)} name='phone' type='phone' value={phonik} onBlur={e => blurHandler(e)} mask="+7 (999) 999-99-99"  maskChar={null} placeholder={`Ваш номер телефона*`} />
+                        
+                        <InputMask onChange={e => phonikHandler(e)} className={(phonikDirty && phonikError) ? 'ne-norm' : 'norm' } name='phone' type='phone' value={phonik} onBlur={e => blurHandler(e)} mask="+7 (999) 999-99-99"  maskChar={null} placeholder={`Ваш номер телефона*`} />
                     </div>
                     {props.mail}
                     {props.city}
