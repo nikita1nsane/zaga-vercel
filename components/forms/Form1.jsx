@@ -79,7 +79,7 @@ const Form1 = (props) => {
                 
                 <form action="" onSubmit={func2}>
                     <div className="flex">
-                        <input type="text" placeholder='Как к вам обращаться?' />
+                        <input type="text" placeholder='Как к вам обращаться?' name="name" />
                         
                         <InputMask onChange={e => phonikHandler(e)} className={(phonikDirty && phonikError) ? 'ne-norm' : 'norm' } name='phone' type='phone' value={phonik} onBlur={e => blurHandler(e)} mask="+7 (999) 999-99-99"  maskChar={null} placeholder={`Ваш номер телефона*`} />
                     </div>
