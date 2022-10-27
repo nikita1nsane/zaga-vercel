@@ -11,7 +11,7 @@ export const dataForm = [
         city: <input type="text" placeholder='Ваш город' />,
         mail: <input type="email" name="mail" placeholder='E-mail для отправки материалов' />,
         time: <input type="text" placeholder='Предпочтительное время для связи' />,
-        button: <button className="header-button">
+        button: <button className="header-button" type="submit">
                     <div className="header-button-text">
                     <span><span className="getPresent">ПОЛУЧИТЬ ПРЕЗЕНТАЦИЮ</span><br /> <span className="getPlus">+ комплект материалов</span></span>
                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +45,7 @@ export const dataForm = [
         city: <input type="text" placeholder='Ваш город' />,
         mail: <input type="email" name="mail" placeholder='E-mail для отправки материалов' />,
         time: <input type="text" placeholder='Предпочтительное время для связи' />,
-        button: <button className="header-button">
+        button: <button className="header-button" type="submit">
                     <div className="header-button-text">
                     <span><span className="getPresent">ПОЗВОНИТЕ МНЕ</span></span>
                     </div>
@@ -64,7 +64,7 @@ export const dataForm = [
         h3: <div className="h3">
                 Оставьте свои данные ниже и мы отправим<br /> вам материалы для скачивания
             </div>,
-        button: <button className="header-button">
+        button: <button className="header-button" type="submit">
                     <div className="header-button-text">
                     <span><span className="getPresent">СКАЧАТЬ БИЗНЕС-ПЛАН</span><br /> <span className="getPlus">+ фин.модель</span></span>
                     <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,7 +98,7 @@ export const dataForm = [
         h3: <div className="h3">
                 Оставьте свои данные ниже, наш специалист свяжется с вами уточнит
             </div>,
-        button: <button className="header-button">
+        button: <button className="header-button" type="submit">
                     <div className="header-button-text">
                     <span><span className="getPresent">ПРОВЕРИТЬ СВОЙ ГОРОД</span></span>
                     </div>
@@ -120,7 +120,7 @@ export const dataForm = [
         h3: <div className="h3">
                 Оставьте свои данные ниже, наш специалист свяжется с вами и подтвердит запись
             </div>,
-        button: <button className="header-button">
+        button: <button className="header-button" type="submit">
                     <div className="header-button-text">
                     <span><span className="getPresent">ЗАПИСАТЬСЯ НА<br />ВСТРЕЧУ ИЛИ ЗВОНОК</span></span>
                     </div>
