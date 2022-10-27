@@ -19,9 +19,17 @@ li.slick-active {
     background-color: #E32966!important;
 }
 
+.complexb {
+    display: block!important;
+}
+
 .norm {
     border-width: 0;
     border-color: #FFFFFF;
+}
+
+.whatIs-complex425 {
+    display: none;
 }
 
 .ne-norm {
@@ -2105,5 +2113,19 @@ form .header-button {
     }
     .pos-aa {
         position: relative;
+    }
+    .whatIs-complex425 {
+        display: block;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 177%;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+    }
+    .complex-item {
+        width: 100%;
     }
 }

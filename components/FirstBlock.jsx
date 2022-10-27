@@ -4,12 +4,14 @@ import {dataForm} from './dataForm/data'
 import Form1 from './forms/Form1'
 import Image from 'next/image'
 import girl from '../images/girl.webp'
+import { useState } from 'react'
 
 const FirstBlock = () => {
 
     const {show} = useAppSelector(state => state.UserReducer)
     const {showR} = UserSlice.actions;
     const dispatch = useAppDispatch();
+    const [visible, setVisible] = useState(false);
 
   return (
     <>
@@ -42,11 +44,13 @@ const FirstBlock = () => {
                         </div>
                     </button>
                 </div>
+
+                <div className='whatIs-complex425' onClick={() => setVisible(!visible)}>Что входит в комплект материалов?</div>
                
                 <div className='whatIs-complex'>
                     <span>*В комплект материалов входит:</span>
                 </div>
-                <div className="complex">
+                <div className={visible ? 'complex complexb' : 'complex'}>
                     <div className="complex-item">
                         <svg width="24" height="31" viewBox="0 0 24 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M23.377 8.13895L17.0832 6.33507L15.285 0.0214844H2.69735C1.20763 0.0214844 0 1.23291 0 2.72731V28.1019C0 29.5963 1.20763 30.8077 2.69735 30.8077H20.6797C22.1694 30.8077 23.377 29.5963 23.377 28.1019V8.13895Z" fill="#5FB977"/>
