@@ -10,9 +10,11 @@ const Footer = () => {
         <div className="footer">
             <div className="container footer-block">
                 <div className="footer-left">
+                    <Link href='/'>
                     <div className='footer-logo'>
                         <Image src={logo} alt='logo' />
                     </div>
+                    </Link>
                     <div className='footer-logo2'>
                         <div className="footer-logo-item">ГК «Точка Роста»</div>
                         {/* <div className="footer-logo-item">ИНН: 2130128742</div>
