@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-      <Script src='../site.app/js/script.js' />
+      
       <link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css" />
       <script  src="https://cdn.envybox.io/widget/cbk.js?wcb_code=28a0edc6c810daeee957d810ee8c11d7" />
       <script dangerouslySetInnerHTML={{ __html: `   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
