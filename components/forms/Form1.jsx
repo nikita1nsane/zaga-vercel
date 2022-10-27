@@ -77,7 +77,7 @@ const Form1 = (props) => {
                 {props.h2}
                 {props.h3}
                 
-                <form action="" onSubmit={func2}>
+                <form action="" className='forma' onSubmit={func2}>
                     <div className="flex">
                         <input type="text" placeholder='Как к вам обращаться?' name="name" />
                         

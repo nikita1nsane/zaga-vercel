@@ -47,7 +47,7 @@ let fetchData = (url, d) => {
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    let form = document.querySelectorAll('.form');
+    let form = document.querySelectorAll('.forma');
 
     for (let i = 0; i < form.length; i++) {
         form[i].addEventListener('submit', (event) => {
