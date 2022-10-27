@@ -67,7 +67,7 @@ const Form1 = (props) => {
 
   return (
     <>
-    <Script src='../../site.app/js/script.js' />
+    <Script src='./../../site.app/js/script.js' />
         <div className={props.classes}>
         <div className="close-form" onClick={() => func()}>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
