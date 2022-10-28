@@ -36,7 +36,7 @@ const Form1 = (props) => {
         dispatch(showRFinal(true));
         ym(88105763,'reachGoal','zakaz');
         let dataСollection = new FormData(e.target);
-        let sendData = fetchData("/components/scripts/site.app/bitrix24/b24Sender.php", dataСollection);
+        // let sendData = fetchData("/components/scripts/site.app/bitrix24/b24Sender.php", dataСollection);
         const data = {
             name,
             phone
