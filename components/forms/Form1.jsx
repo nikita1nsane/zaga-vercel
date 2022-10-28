@@ -4,7 +4,7 @@ import FormFinal from './FormFinal';
 import InputMask from "react-input-mask";
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Script from 'next/script';
+import '../scripts/site.app/js/script';
 
 
 const Form1 = (props) => {
@@ -28,10 +28,34 @@ const Form1 = (props) => {
         dispatch(showRFinal(false))
     }
 
+    const [name, setName] = useState('')
+    const [phone, setPhone] = useState('')
+
     function func2(e) {
         e.preventDefault();
         dispatch(showRFinal(true));
-        ym(88105763,'reachGoal','zakaz')
+        ym(88105763,'reachGoal','zakaz');
+        let dataСollection = new FormData(e.target);
+        let sendData = fetchData("/components/scripts/site.app/bitrix24/b24Sender.php", dataСollection);
+        const data = {
+            name,
+            phone
+        }
+        fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+        }).then((res) => {
+        console.log('Response received')
+        if (res.status === 200) {
+            console.log('Response succeeded!')
+            setName('')
+            setPhone('')
+        }
+        })
     }
 
     const [phonik, setPhonik] = useState('')
@@ -48,7 +72,8 @@ const Form1 = (props) => {
     }, [phonikError])
 
     const phonikHandler = (e) => {
-        setPhonik(e.target.value)
+        setPhonik(e.target.value);
+        setPhone(e.target.value);
         if (e.target.selectionEnd < 18) {
             setPhonikError('Поле с номером не заполнено')
         } else {
@@ -64,10 +89,57 @@ const Form1 = (props) => {
         }
     }
 
+    /**
+ * Getting and Transforming Form Data
+ * @param {*} form
+ * @returns data
+ */
+let getData = (form) => {
+    const inputs = form.querySelectorAll('input');
+    let data = {
+        t_typ,
+        t_src,
+        t_mdm,
+        t_cmp,
+        t_cnt,
+        t_trm,
+        t_vst,
+        t_pgs,
+        t_afd,
+        t_cpg,
+        t_uag,
+        gid: getCookie_MW("_ga"),
+        yid: getCookie_MW("_ym_uid"),
+        from_page: window.location.href,
+    };
+    let key;
+    let val;
+
+    for (let i = 0; i < inputs.length; i++) {
+        key = inputs[i].getAttribute('name');
+        val = inputs[i].value;
+        data[key] = val;
+    }
+
+    return data;
+}
+let fetchData = (url, d) => {
+    fetch(url, {
+			method: "POST",
+			body: d,
+		})
+        .then((response) => response.json())
+        .then((data) => {
+            console.log("Success: ", data)
+        })
+        .catch((err) => {
+            console.log("Error: ", err);
+        });
+}
+
 
   return (
     <>
-    <Script src='/components/scripts/site.app/js/script.js' />
         <div className={props.classes}>
         <div className="close-form" onClick={() => func()}>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +153,7 @@ const Form1 = (props) => {
                 
                 <form action="" className='forma' onSubmit={func2}>
                     <div className="flex">
-                        <input type="text" placeholder='Как к вам обращаться?' name="name" />
+                        <input type="text" placeholder='Как к вам обращаться?' name="name" onChange={(e)=>{setName(e.target.value)}} />
                         
                         <InputMask onChange={e => phonikHandler(e)} className={(phonikDirty && phonikError) ? 'ne-norm' : 'norm' } name='phone' type='phone' value={phonik} onBlur={e => blurHandler(e)} mask="+7 (999) 999-99-99"  maskChar={null} placeholder={`Ваш номер телефона*`} />
                     </div>

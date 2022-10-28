@@ -46,15 +46,22 @@ let fetchData = (url, d) => {
         });
 }
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    let form = document.querySelectorAll('.forma');
-
-    for (let i = 0; i < form.length; i++) {
-        form[i].addEventListener('submit', (event) => {
-            event.preventDefault();
+let submitHandler = (event) => {
+    event.preventDefault();
             
-            let dataСollection = new FormData(event.target);
-            let sendData = fetchData("/site.app/bitrix24/b24Sender.php", dataСollection);
-        });
-    }
-});
+    let dataСollection = new FormData(event.target);
+    let sendData = fetchData("/site.app/bitrix24/b24Sender.php", dataСollection);
+}
+
+// document.addEventListener("DOMContentLoaded", function(event) {
+//     let form = document.querySelectorAll('.form');
+
+//     for (let i = 0; i < form.length; i++) {
+//         form[i].addEventListener('submit', (event) => {
+//             event.preventDefault();
+            
+//             let dataСollection = new FormData(event.target);
+//             let sendData = fetchData("/site.app/bitrix24/b24Sender.php", dataСollection);
+//         });
+//     }
+// });
