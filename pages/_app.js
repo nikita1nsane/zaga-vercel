@@ -7,15 +7,15 @@ import 'react-lazyload-youtube/dist/index.css'
 
 function MyApp({ Component, pageProps }) {
 
-  let execPhp = require('exec-php');
+  // let execPhp = require('exec-php');
 
-  execPhp('/components/scripts/site.app/bitrix24/b24Sender.php', (err, php, out) => {
+  // execPhp('/components/scripts/site.app/bitrix24/b24Sender.php', (err, php, out) => {
 
 
-      php.b24SendLead(1, 2, (err, result, output, printed) => {
+  //     php.b24SendLead(1, 2, (err, result, output, printed) => {
 
-      })
-  })
+  //     })
+  // })
 
   return (
       <Component {...pageProps} />
