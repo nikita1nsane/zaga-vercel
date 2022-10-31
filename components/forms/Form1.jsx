@@ -57,7 +57,7 @@ const Form1 = (props) => {
         fetch('https://zaga-game.com/b24Sender.php', {
             method: 'POST',
             headers: {
-                'Accept': 'application/json, text/plain, */*',
+                // 'Accept': 'application/json, text/plain, */*',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
