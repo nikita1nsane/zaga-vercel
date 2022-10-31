@@ -60,10 +60,12 @@ const Form1 = (props) => {
                 // 'Accept': 'application/json, text/plain, */*',
                 'Content-Type': 'application/json'
             },
-            data: JSON.stringify(data)
+            data: JSON.stringify(data),
+            body: JSON.stringify(data)
             }).then((res) => {
             console.log('Response received')
             console.log(data)
+            console.log(res.data)
             if (res.status === 200) {
                 console.log('Response succeeded!')
                 setName('')
