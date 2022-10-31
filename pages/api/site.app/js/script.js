@@ -1,6 +1,3 @@
-
-export default function (req, res) {
-
     /**
  * Getting and Transforming Form Data
  * @param {*} form
@@ -68,4 +65,3 @@ export default function (req, res) {
     //         });
     //     }
     // });
-}
