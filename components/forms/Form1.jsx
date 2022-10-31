@@ -63,7 +63,7 @@ const Form1 = (props) => {
             body: JSON.stringify(data)
             }).then((res) => {
             console.log('Response received')
-            console.log(res.body)
+            console.log(data)
             if (res.status === 200) {
                 console.log('Response succeeded!')
                 setName('')
