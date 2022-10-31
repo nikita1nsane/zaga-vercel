@@ -96,50 +96,50 @@ $data = [
 
 $phone = phoneFormat($data['phone']); // формат телефона +7 999 999-99-99
 
-$idcontact = null;
+// $idcontact = null;
 
-if (!empty($phone))
-{
-	$queryData = array(
-		"entity_type" => "CONTACT",
-		"type" => "PHONE",
-		"values" => ['7' . dphone($phone)]
-	);
-}
-else
-{
-	$queryData = array(
-		"entity_type" => "CONTACT",
-		"type" => "PHONE",
-		"values" => [$data["email"]]
-	);
-}
-$qp = curl($url . 'crm.duplicate.findbycomm/', $queryData);
-if (isset($qp->result->CONTACT)) $idcontact = array_pop($qp->result->CONTACT);
+// if (!empty($phone))
+// {
+// 	$queryData = array(
+// 		"entity_type" => "CONTACT",
+// 		"type" => "PHONE",
+// 		"values" => ['7' . dphone($phone)]
+// 	);
+// }
+// else
+// {
+// 	$queryData = array(
+// 		"entity_type" => "CONTACT",
+// 		"type" => "PHONE",
+// 		"values" => [$data["email"]]
+// 	);
+// }
+// $qp = curl($url . 'crm.duplicate.findbycomm/', $queryData);
+// if (isset($qp->result->CONTACT)) $idcontact = array_pop($qp->result->CONTACT);
 
-if (!$idcontact) {
-	$queryData = array(
-		'fields' => [
-			'NAME' => $data['name'] ? $data['name'] : 'NONAME',
-			'PHONE' => [['VALUE' => $phone, 'VALUE_TYPE' => 'WORK']],
-			'EMAIL' => [['VALUE' => $data['email'], 'VALUE_TYPE' => 'WORK']],
-			'UF_CRM_5C0F91D34B759' => 'rotado.ru',
-			'UF_CRM_5C08BBB611343' => $data['mw_u_yid'],
-			'UF_CRM_5C08BBB5B9F7D' => $data['mw_u_gid'],
-			'UF_CRM_57457E8BC2CA5' => $data['title'],
-			'UF_CRM_5845017E2144D' => $data['mw_u_roistat'],
-			'UF_CRM_1464171769' => $data['from_page'],
-			'UF_CRM_5735750901169' => $data['city'] ? $data['city'] : $data['region_ip'] . ', ' . $data['city_ip'],
-			'TYPE_ID' => "CLIENT",
-			'SOURCE_ID' => 'SELF',
-			'ASSIGNED_BY_ID' => 3330,
-		],
-		'params' => array("REGISTER_SONET_EVENT" => "Y")
-	);
+// if (!$idcontact) {
+// 	$queryData = array(
+// 		'fields' => [
+// 			'NAME' => $data['name'] ? $data['name'] : 'NONAME',
+// 			'PHONE' => [['VALUE' => $phone, 'VALUE_TYPE' => 'WORK']],
+// 			'EMAIL' => [['VALUE' => $data['email'], 'VALUE_TYPE' => 'WORK']],
+// 			'UF_CRM_5C0F91D34B759' => 'rotado.ru',
+// 			'UF_CRM_5C08BBB611343' => $data['mw_u_yid'],
+// 			'UF_CRM_5C08BBB5B9F7D' => $data['mw_u_gid'],
+// 			'UF_CRM_57457E8BC2CA5' => $data['title'],
+// 			'UF_CRM_5845017E2144D' => $data['mw_u_roistat'],
+// 			'UF_CRM_1464171769' => $data['from_page'],
+// 			'UF_CRM_5735750901169' => $data['city'] ? $data['city'] : $data['region_ip'] . ', ' . $data['city_ip'],
+// 			'TYPE_ID' => "CLIENT",
+// 			'SOURCE_ID' => 'SELF',
+// 			'ASSIGNED_BY_ID' => 3330,
+// 		],
+// 		'params' => array("REGISTER_SONET_EVENT" => "Y")
+// 	);
 
-	$result = curl($url . 'crm.contact.add/', $queryData);
-	$idcontact = $result->result;
-}
+// 	$result = curl($url . 'crm.contact.add/', $queryData);
+// 	$idcontact = $result->result;
+// }
 
 $queryData = array(
 	'fields' => [
@@ -148,6 +148,9 @@ $queryData = array(
 		'TYPE_ID' => "GOODS",
 		'STAGE_ID' => "NEW",
 		'OPENED' => "Y",
+		'NAME' => $data["name"],
+		'PHONE' => $data["phone"],
+		'EMAIL' => $data["email"],
 		'UF_CRM_1464171769' => $data["link"],
 		'UF_CRM_1464171698' => $data['mw_u_source'],
 		'UF_CRM_1464171675' => $data['mw_u_medium'],
@@ -169,7 +172,7 @@ $queryData = array(
 		'UTM_CAMPAIGN' => $data['mw_u_campaign'],
 		'UTM_CONTENT' => $data['mw_u_content'],
 		'UTM_TERM' => $data['mw_u_term'],
-		'UF_CRM_1544520483' => $data['site'],
+		'UF_CRM_1616066354' => $data['site'],
 		'UF_CRM_1660119895491' => $data["good"],
 		'UF_CRM_1491954147' => $data["adress"],
 	],
