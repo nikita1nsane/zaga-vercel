@@ -60,7 +60,7 @@ const Form1 = (props) => {
                 // 'Accept': 'application/json, text/plain, */*',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(data)
+            data: JSON.stringify(data)
             }).then((res) => {
             console.log('Response received')
             console.log(data)
