@@ -45,21 +45,14 @@ const Form1 = (props) => {
             phone,
             email
         }
-        fetch('https://zaga-game.com/b24Sender.php', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-            }).then((res) => {
-            console.log('Response received')
-            if (res.status === 200) {
-                console.log('Response succeeded!')
-                setName('')
-                setPhone('')
-            }
-            })
+        axios({
+            method: 'post',
+            url: 'https://zaga-game.com/b24Sender.php',
+            headers: { 'content-type': 'application/json' },
+            data: data,
+        }).then(result => {
+            console.log(result.data);
+        }).catch(error => console.log(error.message))
         fetch('/api/contact', {
         method: 'POST',
         headers: {
