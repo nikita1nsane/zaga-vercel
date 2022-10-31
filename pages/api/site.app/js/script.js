@@ -56,8 +56,6 @@ export default function (req, res) {
         let dataСollection = new FormData(event.target);
         let sendData = fetchData("/api/site.app/bitrix24/b24Sender.php", dataСollection);
     }
-
-    submitHandler(e)
     
     // document.addEventListener("DOMContentLoaded", function(event) {
     //     let form = document.querySelectorAll('.form');
