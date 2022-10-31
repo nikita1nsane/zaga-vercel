@@ -65,7 +65,6 @@ const Form1 = (props) => {
             }).then((res) => {
             console.log('Response received')
             console.log(data)
-            console.log(res)
             if (res.status === 200) {
                 console.log('Response succeeded!')
                 setName('')
