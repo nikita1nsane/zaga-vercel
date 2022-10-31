@@ -17,7 +17,7 @@ const Form1 = (props) => {
     const {showRFinal} = UserSlice.actions;
     const {showFinal} = useAppSelector(state => state.UserReducer)
     const dispatch = useAppDispatch();
-    const API_PATH = '/b24Sender.php'
+    const API_PATH = '/api/site.app/js/script'
 
 
 
