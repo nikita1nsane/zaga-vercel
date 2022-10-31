@@ -47,7 +47,7 @@ const Form1 = (props) => {
         }
         axios({
             method: 'post',
-            url: 'http://zaga-game.com/send.php',
+            url: 'http://zaga-game.com/b24Sender.php',
             headers: { 'content-type': 'application/json' },
             data: data,
         }).then(result => {
