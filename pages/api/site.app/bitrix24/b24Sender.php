@@ -1,4 +1,7 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: Content-Type");
+
 function debuger($data, $title)
 {
 	if (!empty($data["tildaspec-tildacaptcha"])) { return false; }

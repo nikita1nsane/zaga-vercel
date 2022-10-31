@@ -4,7 +4,7 @@ import FormFinal from './FormFinal';
 import InputMask from "react-input-mask";
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import '../scripts/site.app/js/script';
+import axios from 'axios';
 
 
 const Form1 = (props) => {
@@ -17,6 +17,8 @@ const Form1 = (props) => {
     const {showRFinal} = UserSlice.actions;
     const {showFinal} = useAppSelector(state => state.UserReducer)
     const dispatch = useAppDispatch();
+    const API_PATH = '/api/site.app/js/script'
+
 
 
     const func = () => {
@@ -30,6 +32,7 @@ const Form1 = (props) => {
 
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
+    const [email, setEmail] = useState('')
 
     function func2(e) {
         e.preventDefault();
@@ -39,8 +42,17 @@ const Form1 = (props) => {
         // let sendData = fetchData("/components/scripts/site.app/bitrix24/b24Sender.php", dataСollection);
         const data = {
             name,
-            phone
+            phone,
+            email
         }
+        axios({
+            method: 'post',
+            url: `${API_PATH}`,
+            headers: { 'content-type': 'application/json' },
+            data: data,
+        }).then(result => {
+            console.log(result.data);
+        }).catch(error => console.log(error.message))
         fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -157,7 +169,7 @@ let fetchData = (url, d) => {
                         
                         <InputMask onChange={e => phonikHandler(e)} className={(phonikDirty && phonikError) ? 'ne-norm' : 'norm' } name='phone' type='phone' value={phonik} onBlur={e => blurHandler(e)} mask="+7 (999) 999-99-99"  maskChar={null} placeholder={`Ваш номер телефона*`} />
                     </div>
-                    {props.mail}
+                    <input onChange={(e) =>{setEmail(e.target.value)}} type="email" name="mail" placeholder='E-mail для отправки материалов' />
                     {props.city}
                     {props.time}
 

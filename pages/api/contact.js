@@ -1,4 +1,9 @@
+import Unisender from 'unisender-api';
+
 export default function (req, res) {
+
+  const unisender = new Unisender(process.env.UNISENDER_API);
+  unisender.subscribe('10', req.body.email, req.body.name, {}, {double_optin: 4, overwrite: 2});
   
   let nodemailer = require('nodemailer')
   const transporter = nodemailer.createTransport({
