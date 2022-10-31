@@ -1,6 +1,5 @@
 
 export default function (req, res) {
-    console.log('script runs')
 
     /**
  * Getting and Transforming Form Data
