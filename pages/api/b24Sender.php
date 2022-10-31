@@ -53,7 +53,7 @@ $url = "https://tochka360.bitrix24.ru/rest/3854/lks5d4ibptq1vp92/";
 $data = [
 	'title' => "Заголовок с нового сайта zaga-game.ru",
 	'name' => $_POST["name"],
-	'email' => $_POST["mail"],
+	'email' => $_POST["email"],
 	'phone' => $_POST["phone"],
 	'mw_u_source'    => htmlspecialchars(trim($_POST['t_src'])),
 	'mw_u_medium'    => htmlspecialchars(trim($_POST['t_mdm'])),
@@ -149,8 +149,18 @@ $queryData = array(
 		'STAGE_ID' => "NEW",
 		'OPENED' => "Y",
 		'NAME' => $data["name"],
-		'PHONE' => $data["phone"],
-		'EMAIL' => $data["email"],
+		'PHONE' => [
+			[
+				'VALUE' => $data["phone"],
+				'VALUE_TYPE' => 'WORK',
+			]
+		],
+		'EMAIL' => [
+			[
+				'VALUE' => $data['email'],
+				'VALUE_TYPE' => 'WORK'
+				]
+		],
 		'UF_CRM_1464171769' => $data["link"],
 		'UF_CRM_1464171698' => $data['mw_u_source'],
 		'UF_CRM_1464171675' => $data['mw_u_medium'],
