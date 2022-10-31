@@ -47,7 +47,7 @@ const Form1 = (props) => {
         }
         axios({
             method: 'post',
-            url: `${API_PATH}`,
+            url: '/api/b24Sender',
             headers: { 'content-type': 'application/json' },
             data: data,
         }).then(result => {
