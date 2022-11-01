@@ -60,8 +60,7 @@ const Form1 = (props) => {
                 // 'Accept': 'application/json, text/plain, */*',
                 'Content-Type': 'application/json'
             },
-            data: JSON.stringify(data),
-            body: JSON.stringify(data)
+            body: FormData(formElem)
             }).then((res) => {
             console.log('Response received')
             console.log(data)
@@ -134,7 +133,7 @@ const Form1 = (props) => {
                 {props.h2}
                 {props.h3}
                 
-                <form action="" className='forma' onSubmit={func2}>
+                <form id='formElem' action="" className='forma' onSubmit={func2}>
                     <div className="flex">
                         <input type="text" placeholder='Как к вам обращаться?' name="name" onChange={(e)=>{setName(e.target.value)}} />
                         
