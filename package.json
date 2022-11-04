@@ -15,6 +15,7 @@
     "dotenv": "^16.0.3",
     "embla-carousel-react": "^7.0.3",
     "exec-php": "0.0.6",
+    "express": "^4.18.2",
     "net": "^1.0.2",
     "next": "^12.3.1",
     "nodemailer": "^6.8.0",
