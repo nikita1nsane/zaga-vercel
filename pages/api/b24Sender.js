@@ -1,7 +1,8 @@
 import b24 from 'b24'
 import express from 'express'
 
-const app = express()
+export default function (req, res) {
+    const app = express()
 
 const bitrix24 = new b24.Bitrix24({
     config: {
@@ -50,3 +51,4 @@ app.get('/crmLeadAdd', async (req, res) => {
 app.listen(3000, () => {
     console.log('Server started on port 3000');
 });
+}
