@@ -14,9 +14,9 @@ const bitrix24 = new b24.Bitrix24({
 })
 
 
-app.get('/crmLeadAdd', async (req, res) => {
+app.get('/crmLeadAdd', (req, res) => {
     try{
-        const result = await bitrix24.callMethod('crm.lead.add', {
+        const result = bitrix24.callMethod('crm.lead.add', {
             fields: { 
                 'TITLE': "Заголовок с нового сайта zaga-game.ru",
                 'NAME': req.body.name,
