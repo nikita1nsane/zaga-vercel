@@ -38,7 +38,8 @@ const Form1 = (props) => {
         e.preventDefault();
         dispatch(showRFinal(true));
         ym(88105763,'reachGoal','zakaz');
-        let dataСollection = new FormData(e.current.target);
+        let dataСollection = new FormData(e.target);
+        console.log(e.currentTarget)
         // let sendData = fetchData("/components/scripts/site.app/bitrix24/b24Sender.php", dataСollection);
         const data = {
             name,
@@ -54,16 +55,15 @@ const Form1 = (props) => {
         //     console.log(result.data);
         // }).catch(error => console.log(error.message))
 
-        fetch('https://zaga-game.com/b24Sender.php', {
+        fetch('/api/b24Sender', {
             method: 'POST',
             headers: {
                 // 'Accept': 'application/json, text/plain, */*',
                 'Content-Type': 'application/json'
             },
-            body: dataСollection
+            body: JSON.stringify(data)
             }).then((res) => {
             console.log('Response received')
-            console.log(data)
             if (res.status === 200) {
                 console.log('Response succeeded!')
                 setName('')
