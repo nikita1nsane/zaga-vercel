@@ -13,7 +13,7 @@ const bitrix24 = new b24.Bitrix24({
 })
 
 
-app.get('crm.lead.add/', async (req, res) => {
+app.get('/crmLeadAdd', async (req, res) => {
     try{
         const result = await bitrix24.callMethod('crm.lead.add', {
             fields: { 
