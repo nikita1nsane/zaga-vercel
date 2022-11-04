@@ -1,8 +1,7 @@
 import b24 from 'b24'
 import express from 'express'
 
-export default function (req, res) {
-    const app = express()
+const app = express()
 
 const bitrix24 = new b24.Bitrix24({
     config: {
@@ -14,9 +13,9 @@ const bitrix24 = new b24.Bitrix24({
 })
 
 
-app.get('/crmLeadAdd', (req, res) => {
+app.get('/crmLeadAdd', async (req, res) => {
     try{
-        const result = bitrix24.callMethod('crm.lead.add', {
+        const result = await bitrix24.callMethod('crm.lead.add', {
             fields: { 
                 'TITLE': "Заголовок с нового сайта zaga-game.ru",
                 'NAME': req.body.name,
@@ -51,4 +50,3 @@ app.get('/crmLeadAdd', (req, res) => {
 app.listen(3000, () => {
     console.log('Server started on port 3000');
 });
-}
