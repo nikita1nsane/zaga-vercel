@@ -3,7 +3,7 @@ import express from 'express'
 
 const app = express()
 
-const bitrix24 = new b24.Bitrix24({
+const bitrix24 = new b24.Bitrix24 ({
     config: {
         mode: "webhook",
         host: "tochka360.bitrix24.ru",
@@ -23,7 +23,7 @@ app.get('/crmLeadAdd', async (req, res) => {
                 'phone': req.body.phone,
                 'PHONE': [
                     {
-                        'VALUE': req.body.email,
+                        'VALUE': req.body.phone,
                         'VALUE_TYPE': 'WORK',
                     }
                 ],
