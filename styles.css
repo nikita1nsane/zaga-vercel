@@ -2129,3 +2129,26 @@ form .header-button {
         width: 100%;
     }
 }
+
+.wa-475 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #19b04b;
+    border-radius: 50px;
+    padding: 15px 20px;
+    line-height: 1.5;
+    font-size: 16px;
+    z-index: 10000;
+}
+
+@media (max-width: 475px) {
+    .wa-475 {
+        display: flex;
+        position: fixed;
+        bottom: 2%;
+        left: 5%;
+        right: 5%;
+    }
+}

@@ -92,6 +92,9 @@ const FirstBlock = () => {
                     </div>
                 </div>
             </div>
+            <div className="wa-475">
+                <a href="https://api.whatsapp.com/send/?phone=79636623890&text&app_absent=0&amp;text&amp;app_absent=0" target="_blank">Связаться в WhatsApp</a>
+            </div>
         </div>
         </div>
     </>
