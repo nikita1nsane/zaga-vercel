@@ -34,12 +34,30 @@ const Form1 = (props) => {
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
 
+    /**
+     * Собираю данные с форм
+     * @param {DOMElement} form 
+     * @returns {object} data
+     */
+    let getFormData = (form) => {
+        const inputs = form.querySelectorAll('input');
+        let data = {};
+
+        for (let i = 0; i < inputs.length; i++) {
+            data[inputs[i].name] = inputs[i].value;
+        }
+
+        return data;
+    }
+
     function func2(e) {
         e.preventDefault();
         dispatch(showRFinal(true));
         ym(88105763,'reachGoal','zakaz');
-        let dataСollection = new FormData(e.target);
-        console.log(e.currentTarget)
+        const form = e.target;
+        let formData = getFormData(form);
+        
+        // let dataСollection = new FormData(e.target);
         // let sendData = fetchData("/components/scripts/site.app/bitrix24/b24Sender.php", dataСollection);
         const data = {
             name,
@@ -55,21 +73,46 @@ const Form1 = (props) => {
         //     console.log(result.data);
         // }).catch(error => console.log(error.message))
 
-        fetch('/api/b24Sender', {
-            method: 'POST',
+        // fetch('/b24Sender', {
+        //     method: 'POST',
+        //     headers: {
+        //         // 'Accept': 'application/json, text/plain, */*',
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(data)
+        //     })
+        //     .then((res) => {
+        //     console.log('Response received')
+        //     if (res.status === 200) {
+        //         console.log('Response succeeded!')
+        //         setName('')
+        //         setPhone('')
+        //     }
+        //     })
+
+        // console.log(formData)
+
+        // console.log(b24Url);
+
+
+        // Поставлен mode: no-cors
+        fetch('https://zaga-game.com/b24Sender.php', {
+			method: "POST",
+            mode: 'no-cors',
             headers: {
-                // 'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-            }).then((res) => {
-            console.log('Response received')
-            if (res.status === 200) {
-                console.log('Response succeeded!')
-                setName('')
-                setPhone('')
-            }
-            })
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(formData),
+		})
+        .then((response) => response.json())
+        .then((data) => {
+            console.log("Success: ", data)
+        })
+        .catch((err) => {
+            console.log("Error: ", err);
+        });
+
+        // console.log(dataСollection);
 
         fetch('/api/contact', {
         method: 'POST',
@@ -139,7 +182,7 @@ const Form1 = (props) => {
                         
                         <InputMask onChange={e => phonikHandler(e)} className={(phonikDirty && phonikError) ? 'ne-norm' : 'norm' } name='phone' type='phone' value={phonik} onBlur={e => blurHandler(e)} mask="+7 (999) 999-99-99"  maskChar={null} placeholder={`Ваш номер телефона*`} />
                     </div>
-                    <input onChange={(e) =>{setEmail(e.target.value)}} type="email" name="mail" placeholder='E-mail для отправки материалов' />
+                    <input onChange={(e) =>{setEmail(e.target.value)}} type="email" name="email" placeholder='E-mail для отправки материалов' />
                     {props.city}
                     {props.time}
 
