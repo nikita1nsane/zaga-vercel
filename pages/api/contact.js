@@ -10,18 +10,18 @@ export default function (req, res) {
     port: 465,
     host: "smtp.yandex.ru",
     auth: {
-      user: 'nikita2199@yandex.ru',
+      user: 'info@zaga-game.com',
       pass: process.env.PASSWORD,
     },
     secure: true,
   })
   const mailData = {
-    from: 'nikita2199@yandex.ru',
-    to: 'nikita2199@yandex.ru',
-    subject: `Message From ${req.body.name}`,
-    text: req.body.phone + " | Sent from: " + req.body.name,
-    html: `<div>${req.body.phone}</div><p>Sent from:
-    ${req.body.phone}</p>`
+    from: 'info@zaga-game.com',
+    to: 'info@zaga-game.com',
+    subject: `Заявка с нового сайта zaga-game`,
+    text: 'Номер телефона: ' + req.body.phone + " | Имя: " + req.body.name,
+    html: `<div>Имя: ${req.body.name}</div><p>Номер телефона:
+    ${req.body.phone}</p><div>E-mail: ${req.body.email}</div>`
   }
   transporter.sendMail(mailData, function (err, info) {
     if(err)
