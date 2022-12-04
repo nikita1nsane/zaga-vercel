@@ -23,6 +23,7 @@ const Team = () => {
                     <div className='team-name'>Федор Петров</div>
                     <div className='team-mail' ><a href="mailto:petrov@zaga-game.com">petrov@zaga-game.com</a></div>
                 </div> */}
+                {/* hehe */}
                 <div className='flex-item'>
                     <Image src={img2} />
                     <div className='team-post'>Руководитель по развитию</div>
