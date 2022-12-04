@@ -187,7 +187,7 @@ const Form1 = (props) => {
                     {props.time}
 
                     <div className="text">
-                        <span>Отправляя форму, вы соглашаетесь с <Link href="/policy"><a политикой className='policy'>политикой конфиденциальности</a></Link></span>
+                        <span>Отправляя форму, вы соглашаетесь с <Link href="/policy"><a className='policy'>политикой конфиденциальности</a></Link></span>
                     </div>
                     {!formValid ? props.buttond : props.button}
                 </form>

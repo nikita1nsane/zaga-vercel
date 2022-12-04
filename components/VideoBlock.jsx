@@ -1,32 +1,32 @@
-// import  Youtube  from 'react-lazyload-youtube'
+import  Youtube  from 'react-lazyload-youtube'
 
-// const VideoBlock = () => {
+const VideoBlock = () => {
 
-//     // const onPlayerReady = (event) => {
-//     //   // access to player in all event handlers via event.target
-//     //   event.target.pauseVideo();
-//     // }
+    // const onPlayerReady = (event) => {
+    //   // access to player in all event handlers via event.target
+    //   event.target.pauseVideo();
+    // }
   
-//     // const opts = {
-//     //   height: '474px',
-//     //   width: '100%',
-//     //   playerVars: {
-//     //     // https://developers.google.com/youtube/player_parameters
-//     //     autoplay: 0,
-//     //   },
-//     // };
+    // const opts = {
+    //   height: '474px',
+    //   width: '100%',
+    //   playerVars: {
+    //     // https://developers.google.com/youtube/player_parameters
+    //     autoplay: 0,
+    //   },
+    // };
 
 
-//   return (
-//     <>
-//       <div id="video">
-//         <div className="container video-block">
-//         {/* <YouTube videoId="uBQMH3vyvRM" opts={opts} onReady={onPlayerReady} /> */}
-//         <Youtube width="100%" height="474px" imgSize="maxresdefault" videoId="uBQMH3vyvRM"/>
-//         </div>
-//       </div>
-//     </>
-//   )
-// }
+  return (
+    <>
+      <div id="video">
+        <div className="container video-block">
+        {/* <YouTube videoId="uBQMH3vyvRM" opts={opts} onReady={onPlayerReady} /> */}
+        <Youtube width="100%" height="474px" imgSize="maxresdefault" videoId="uBQMH3vyvRM"/>
+        </div>
+      </div>
+    </>
+  )
+}
 
-// export default VideoBlock
+export default VideoBlock

@@ -33,7 +33,7 @@ export default function Document() {
                 var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
                 var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
             })(window, document, 'script', 'cloud.roistat.com', 'e93195711029017594b103c04e93e963');` }} />
-        <script type="bogus" class="js-whatsapp-message-container" dangerouslySetInnerHTML={{ __html: `Обязательно отправьте это сообщение и получите коммерческое предложение. Ваш номер: {roistat_visit}` }} />
+        <script type="bogus" className="js-whatsapp-message-container" dangerouslySetInnerHTML={{ __html: `Обязательно отправьте это сообщение и получите коммерческое предложение. Ваш номер: {roistat_visit}` }} />
         <script dangerouslySetInnerHTML={{ __html: `(function() {
     if (window.roistat !== undefined) {
         handler();
