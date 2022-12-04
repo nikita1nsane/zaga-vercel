@@ -935,14 +935,13 @@ header.header-bot {
 .team-block {
     margin-bottom: 170px;
 }
+.team-block .flex {
+    gap: 0;
+}
 
 .team-img {
-    width: 243px;
-    height: 313px;
-    background: #FFFFFF;
     box-shadow: 0px 0px 80px rgba(180, 154, 248, 0.5);
     border-radius: 20px;
-    margin-bottom: 20px;
 }
 
 .team-post {
@@ -953,6 +952,7 @@ header.header-bot {
     line-height: 111%;
     margin-bottom: 6px;
     text-align: center;
+    margin-top: -50px;
 }
 
 .team-name {
