@@ -144,6 +144,10 @@ header {
     margin-bottom: 40px;
 }
 
+#advantages .advantages-top.flex-column {
+    gap: 10px;
+}
+
 .f-icons {
     display: flex;
     gap: 5px;
@@ -558,7 +562,12 @@ header.header-bot {
 .whatIs-left {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
+}
+
+#numbers {
+    margin-bottom: 80px;
 }
 
 .whatIs-item {
@@ -935,8 +944,9 @@ header.header-bot {
 .team-block {
     margin-bottom: 170px;
 }
-.team-block .flex {
-    gap: 0;
+.team-flex {
+    gap: 20px;
+    justify-content: center;
 }
 
 .team-img {
@@ -952,7 +962,7 @@ header.header-bot {
     line-height: 111%;
     margin-bottom: 6px;
     text-align: center;
-    margin-top: -50px;
+    margin-top: 20px;
 }
 
 .team-name {
@@ -1264,6 +1274,28 @@ input, textarea {
 
 .slick-arrow.slick-prev {
     left: 15%;
+    z-index: 2;
+}
+
+._2hdkJ {
+    margin: auto;
+}
+
+.slick-slide img {
+    min-height: 231px;
+    border-radius: 10px;
+}
+
+#game-lib .slick-initialized .slick-slide {
+    margin: 0 10px;
+}
+
+div[data-index='13'] {
+    display: none!important;
+}
+
+#video div[data-index='3'] {
+    display: none!important;
 }
 
 .slick-arrow.slick-next::before {
@@ -1446,6 +1478,7 @@ form .header-button {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-bottom: 80px;
     /* background-image: url('./images/ellipses_back.webp');
     background-repeat: no-repeat;
     background-size: cover; */

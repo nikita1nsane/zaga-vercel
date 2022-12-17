@@ -8,7 +8,7 @@ const WhatIs = () => {
         <div className="whatIs-block container" id="whatIs">
             <div className="h2"><span>Что такое ZAGA-GAME?</span></div>
             <div className="h3">
-                <span className="fw-400"><span className="fw-500">VR-АРЕНА ZAGA GAME</span> – это арена виртуальной реальности полного погружения <span className="fw-700">без ПАУШАЛЬНЫХ ВЗНОСОВ</span> и <span className="fw-700">РОЯЛТИ</span>. Движения в реальном мире на площади от 100м<sup><small>2</small></sup> до<br /> 648 м<sup><small>2</small></sup> полностью переносятся в виртуальную реальность!</span>
+                <span className="fw-400"><span className="fw-500">VR-АРЕНА ZAGA GAME</span> – это арена виртуальной реальности полного погружения <span className="fw-700">без ПАУШАЛЬНЫХ ВЗНОСОВ</span> и <span className="fw-700">РОЯЛТИ</span>. Движения в реальном мире на площади от 80м<sup><small>2</small></sup> до<br /> 648 м<sup><small>2</small></sup> полностью переносятся в виртуальную реальность!</span>
             </div>
             <div className="whatIs-content">
                 <div className="whatIs-left">

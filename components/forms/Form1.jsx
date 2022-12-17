@@ -5,6 +5,7 @@ import InputMask from "react-input-mask";
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import axios from 'axios';
+import { RESPONSE_LIMIT_DEFAULT } from 'next/dist/server/api-utils';
 
 
 const Form1 = (props) => {
@@ -54,6 +55,7 @@ const Form1 = (props) => {
         e.preventDefault();
         dispatch(showRFinal(true));
         ym(88105763,'reachGoal','zakaz');
+        window.roistat.getVisit();
         const form = e.target;
         let formData = getFormData(form);
         
